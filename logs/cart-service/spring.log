@@ -1,0 +1,23 @@
+00:19:05:335  INFO 21224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+00:19:05:380  INFO 21224 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+00:19:27:502  INFO 19464 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 11.0.24 on HUAWEI-PC with PID 19464 (E:\JavaProject\SpringBoot\itheima\hmall\cart-service\target\classes started by 表里不一 in E:\JavaProject\SpringBoot\itheima\hmall)
+00:19:27:508 DEBUG 19464 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+00:19:27:509  INFO 19464 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "dev"
+00:19:31:004  INFO 19464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+00:19:31:006  INFO 19464 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+00:19:31:006  INFO 19464 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+00:19:31:006  INFO 19464 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+00:19:31:030  INFO 19464 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+00:19:31:047  INFO 19464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+00:19:31:049  INFO 19464 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+00:19:31:543  INFO 19464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+00:19:31:543  INFO 19464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3923 ms
+00:19:35:461  INFO 19464 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+00:19:35:648  INFO 19464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+00:19:35:650  INFO 19464 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+00:19:35:658  INFO 19464 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+00:19:35:724  INFO 19464 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+00:19:35:932  INFO 19464 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 9.6 seconds (JVM running for 12.481)
+00:23:15:365  INFO 19464 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:23:15:366  INFO 19464 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+00:23:15:371  INFO 19464 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
