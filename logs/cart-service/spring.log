@@ -301,3 +301,68 @@ Consider defining a bean of type 'com.hmall.api.client.ItemClient' in your confi
 00:51:51:522  INFO 36944 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@ffb8718[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 54]
 00:51:51:528  INFO 36944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 00:51:51:544  INFO 36944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+00:52:05:481  INFO 5080 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 11.0.24 on HUAWEI-PC with PID 5080 (E:\JavaProject\SpringBoot\itheima\hmall\cart-service\target\classes started by 表里不一 in E:\JavaProject\SpringBoot\itheima\hmall)
+00:52:05:484 DEBUG 5080 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+00:52:05:484  INFO 5080 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "dev"
+00:52:07:444  INFO 5080 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cda845ce-2a52-37dc-8aba-e40391e8e55a
+00:52:08:244  INFO 5080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+00:52:08:245  INFO 5080 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+00:52:08:246  INFO 5080 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+00:52:08:246  INFO 5080 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+00:52:08:254  INFO 5080 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+00:52:08:268  INFO 5080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+00:52:08:268  INFO 5080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+00:52:08:530  INFO 5080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+00:52:08:531  INFO 5080 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2987 ms
+00:52:09:010  INFO 5080 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+00:52:15:276  INFO 5080 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:52:15:320  INFO 5080 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+00:52:17:558  INFO 5080 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:52:17:860  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of cbbb62f9-6858-423c-9762-c97a386cdc19
+00:52:17:916  INFO 5080 --- [main] org.reflections.Reflections              : Reflections took 32 ms to scan 1 urls, producing 3 keys and 6 values 
+00:52:17:954  INFO 5080 --- [main] org.reflections.Reflections              : Reflections took 14 ms to scan 1 urls, producing 4 keys and 9 values 
+00:52:17:969  INFO 5080 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 3 keys and 10 values 
+00:52:17:975  WARN 5080 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+00:52:17:988  INFO 5080 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 1 keys and 5 values 
+00:52:18:003  INFO 5080 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 1 keys and 7 values 
+00:52:18:032  INFO 5080 --- [main] org.reflections.Reflections              : Reflections took 25 ms to scan 1 urls, producing 2 keys and 8 values 
+00:52:18:035  WARN 5080 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+00:52:18:037  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] RpcClient init label, labels = {module=naming, source=sdk}
+00:52:18:041  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+00:52:18:041  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+00:52:18:042  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+00:52:18:045  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+00:52:22:896  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Success to connect to server [localhost:8848] on start up, connectionId = 1725987142634_127.0.0.1_1676
+00:52:22:897  INFO 5080 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Notify connected event to listeners.
+00:52:22:898  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+00:52:22:899  INFO 5080 --- [main] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$991/0x000000080077f440
+00:52:22:977  INFO 5080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+00:52:22:989  INFO 5080 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 26.10.64.202:8082 register finished
+00:52:23:550  INFO 5080 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Receive server push request, request = NotifySubscriberRequest, requestId = 17
+00:52:23:557  INFO 5080 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Ack server push request, request = NotifySubscriberRequest, requestId = 17
+00:52:25:190  INFO 5080 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:52:25:191  INFO 5080 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+00:52:25:196  INFO 5080 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+00:52:25:231  INFO 5080 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+00:52:25:408  INFO 5080 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 23.852 seconds (JVM running for 26.955)
+00:53:42:869  INFO 5080 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:53:42:870  INFO 5080 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+00:53:42:873  INFO 5080 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+00:53:43:015  INFO 5080 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+00:53:43:542  INFO 5080 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+00:53:43:550 DEBUG 5080 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+00:53:43:579 DEBUG 5080 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+00:53:43:613 DEBUG 5080 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+00:53:43:698 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=5018712 HTTP/1.1
+00:53:43:698 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+00:53:44:121 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200  (421ms)
+00:53:44:122 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+00:53:44:122 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+00:53:44:122 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Tue, 10 Sep 2024 16:53:44 GMT
+00:53:44:123 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+00:53:44:123 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+00:53:44:123 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+00:53:44:124 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"5018712","name":"巴布豆(BOBDOG)超薄婴儿拉拉裤L132片(9-14kg)","price":63700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t24688/250/275231566/279821/ff39785b/5b6aa006Nf0d1c4b6.jpg!q70.jpg.webp","category":"拉拉裤","brand":"巴布豆","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+00:53:44:125 DEBUG 5080 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (343-byte body)
+00:53:44:493  INFO 5080 --- [nacos-grpc-client-executor-36] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Receive server push request, request = NotifySubscriberRequest, requestId = 18
+00:53:44:494  INFO 5080 --- [nacos-grpc-client-executor-36] com.alibaba.nacos.common.remote.client   : [cbbb62f9-6858-423c-9762-c97a386cdc19] Ack server push request, request = NotifySubscriberRequest, requestId = 18
