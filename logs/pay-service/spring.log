@@ -149,3 +149,35 @@
 11:18:40:019  INFO 26268 --- [nacos-grpc-client-executor-47] com.alibaba.nacos.common.remote.client   : [e82c08de-aedb-4148-9ed9-6f9ac24f21c3] Ack server push request, request = NotifySubscriberRequest, requestId = 116
 11:18:40:350  INFO 26268 --- [nacos-grpc-client-executor-48] com.alibaba.nacos.common.remote.client   : [e82c08de-aedb-4148-9ed9-6f9ac24f21c3] Receive server push request, request = NotifySubscriberRequest, requestId = 117
 11:18:40:352  INFO 26268 --- [nacos-grpc-client-executor-48] com.alibaba.nacos.common.remote.client   : [e82c08de-aedb-4148-9ed9-6f9ac24f21c3] Ack server push request, request = NotifySubscriberRequest, requestId = 117
+11:35:09:411 DEBUG 26268 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE (biz_order_no = ?)
+11:35:09:419 DEBUG 26268 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : ==> Parameters: 1834435621444599809(Long)
+11:35:09:427 DEBUG 26268 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.selectOne  : <==      Total: 0
+11:35:09:438 DEBUG 26268 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==>  Preparing: INSERT INTO pay_order ( id, biz_order_no, pay_order_no, biz_user_id, pay_channel_code, amount, pay_type, status, pay_over_time ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ? )
+11:35:09:441 DEBUG 26268 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : ==> Parameters: 1834435623386599425(Long), 1834435621444599809(Long), 1834435623323684865(Long), 1(Long), balance(String), 63700(Integer), 5(Integer), 1(Integer), 2024-09-13T13:35:09.435986600(LocalDateTime)
+11:35:09:447 DEBUG 26268 --- [http-nio-8085-exec-3] c.h.pay.mapper.PayOrderMapper.insert     : <==    Updates: 1
+11:35:13:952 DEBUG 26268 --- [http-nio-8085-exec-5] c.h.p.mapper.PayOrderMapper.selectById   : ==>  Preparing: SELECT id,biz_order_no,pay_order_no,biz_user_id,pay_channel_code,amount,pay_type,status,expand_json,result_code,result_msg,pay_success_time,pay_over_time,qr_code_url,create_time,update_time,creater,updater,is_delete FROM pay_order WHERE id=?
+11:35:13:952 DEBUG 26268 --- [http-nio-8085-exec-5] c.h.p.mapper.PayOrderMapper.selectById   : ==> Parameters: 1834435623386599425(Long)
+11:35:13:955 DEBUG 26268 --- [http-nio-8085-exec-5] c.h.p.mapper.PayOrderMapper.selectById   : <==      Total: 1
+11:35:13:961 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> PUT http://user-service/users/money/deduct?pw=123&amount=63700 HTTP/1.1
+11:35:13:961 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] user-info: 1
+11:35:13:961 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] ---> END HTTP (0-byte body)
+11:35:14:131 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- HTTP/1.1 200 (170ms)
+11:35:14:132 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] connection: keep-alive
+11:35:14:132 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] content-length: 0
+11:35:14:132 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] date: Fri, 13 Sep 2024 03:35:14 GMT
+11:35:14:132 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] keep-alive: timeout=60
+11:35:14:132 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] 
+11:35:14:133 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.UserClient          : [UserClient#deductMoney] <--- END HTTP (0-byte body)
+11:35:14:137 DEBUG 26268 --- [http-nio-8085-exec-5] c.h.pay.mapper.PayOrderMapper.update     : ==>  Preparing: UPDATE pay_order SET status=?,pay_success_time=? WHERE (id = ? AND status IN (?,?))
+11:35:14:138 DEBUG 26268 --- [http-nio-8085-exec-5] c.h.pay.mapper.PayOrderMapper.update     : ==> Parameters: 3(Integer), 2024-09-13T11:35:14.133481100(LocalDateTime), 1834435623386599425(Long), 0(Integer), 1(Integer)
+11:35:14:140 DEBUG 26268 --- [http-nio-8085-exec-5] c.h.pay.mapper.PayOrderMapper.update     : <==    Updates: 1
+11:35:14:141 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] ---> PUT http://trade-service/orders/1834435621444599809 HTTP/1.1
+11:35:14:141 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] user-info: 1
+11:35:14:141 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] ---> END HTTP (0-byte body)
+11:35:14:154 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] <--- HTTP/1.1 200 (12ms)
+11:35:14:154 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] connection: keep-alive
+11:35:14:154 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] content-length: 0
+11:35:14:154 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] date: Fri, 13 Sep 2024 03:35:14 GMT
+11:35:14:155 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] keep-alive: timeout=60
+11:35:14:155 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] 
+11:35:14:155 DEBUG 26268 --- [http-nio-8085-exec-5] com.hmall.api.client.TradeClient         : [TradeClient#markOrderPaySuccess] <--- END HTTP (0-byte body)

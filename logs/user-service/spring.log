@@ -483,3 +483,18 @@ Identify and stop the process that's listening on port 8083 or configure this ap
 11:18:39:695 DEBUG 21012 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
 11:18:39:702 DEBUG 21012 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
 11:18:39:703  INFO 21012 --- [http-nio-8083-exec-5] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+11:34:54:369 ERROR 21012 --- [http-nio-8083-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 974666
+11:34:54:433 DEBUG 21012 --- [http-nio-8083-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+11:34:54:433 DEBUG 21012 --- [http-nio-8083-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+11:34:54:438 DEBUG 21012 --- [http-nio-8083-exec-7] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+11:35:03:181 DEBUG 21012 --- [http-nio-8083-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+11:35:03:182 DEBUG 21012 --- [http-nio-8083-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+11:35:03:189 DEBUG 21012 --- [http-nio-8083-exec-8] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+11:35:14:005  INFO 21012 --- [http-nio-8083-exec-9] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+11:35:14:006 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+11:35:14:006 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 1(Long)
+11:35:14:009 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+11:35:14:121 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 63700 where id = ?
+11:35:14:122 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 1(Long)
+11:35:14:129 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+11:35:14:129  INFO 21012 --- [http-nio-8083-exec-9] c.h.user.service.impl.UserServiceImpl    : 扣款成功

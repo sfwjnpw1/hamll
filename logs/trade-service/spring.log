@@ -883,3 +883,57 @@ java.sql.SQLException: Field 'user_id' doesn't have a default value
 11:18:39:924 DEBUG 19252 --- [http-nio-8084-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
 11:18:39:925 DEBUG 19252 --- [http-nio-8084-exec-6] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1834431213298204674(Long)
 11:18:39:927 DEBUG 19252 --- [http-nio-8084-exec-6] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:34:14:383  INFO 19252 --- [nacos-grpc-client-executor-252] com.alibaba.nacos.common.remote.client   : [b3330f47-ebe4-4c1f-ac63-ef267248fb39] Receive server push request, request = NotifySubscriberRequest, requestId = 119
+11:34:14:393  INFO 19252 --- [nacos-grpc-client-executor-252] com.alibaba.nacos.common.remote.client   : [b3330f47-ebe4-4c1f-ac63-ef267248fb39] Ack server push request, request = NotifySubscriberRequest, requestId = 119
+11:34:39:773  INFO 19252 --- [nacos-grpc-client-executor-257] com.alibaba.nacos.common.remote.client   : [b3330f47-ebe4-4c1f-ac63-ef267248fb39] Receive server push request, request = NotifySubscriberRequest, requestId = 120
+11:34:39:775  INFO 19252 --- [nacos-grpc-client-executor-257] com.alibaba.nacos.common.remote.client   : [b3330f47-ebe4-4c1f-ac63-ef267248fb39] Ack server push request, request = NotifySubscriberRequest, requestId = 120
+11:35:08:924 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> GET http://item-service/items?ids=5018712 HTTP/1.1
+11:35:08:924 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] user-info: 1
+11:35:08:924 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] ---> END HTTP (0-byte body)
+11:35:08:963 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- HTTP/1.1 200 (38ms)
+11:35:08:963 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] connection: keep-alive
+11:35:08:964 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] content-type: application/json
+11:35:08:964 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] date: Fri, 13 Sep 2024 03:35:08 GMT
+11:35:08:965 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] keep-alive: timeout=60
+11:35:08:965 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] transfer-encoding: chunked
+11:35:08:965 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] 
+11:35:08:965 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] [{"id":"5018712","name":"巴布豆(BOBDOG)超薄婴儿拉拉裤L132片(9-14kg)","price":63700,"stock":10000,"image":"https://m.360buyimg.com/mobilecms/s720x720_jfs/t24688/250/275231566/279821/ff39785b/5b6aa006Nf0d1c4b6.jpg!q70.jpg.webp","category":"拉拉裤","brand":"巴布豆","spec":"{}","sold":0,"commentCount":0,"isAD":false,"status":1}]
+11:35:08:965 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (343-byte body)
+11:35:08:982 DEBUG 19252 --- [http-nio-8084-exec-9] c.hmall.trade.mapper.OrderMapper.insert  : ==>  Preparing: INSERT INTO `order` ( id, total_fee, payment_type, user_id, status ) VALUES ( ?, ?, ?, ?, ? )
+11:35:08:985 DEBUG 19252 --- [http-nio-8084-exec-9] c.hmall.trade.mapper.OrderMapper.insert  : ==> Parameters: 1834435621444599809(Long), 63700(Integer), 3(Integer), 1(Long), 1(Integer)
+11:35:08:988 DEBUG 19252 --- [http-nio-8084-exec-9] c.hmall.trade.mapper.OrderMapper.insert  : <==    Updates: 1
+11:35:08:992 DEBUG 19252 --- [http-nio-8084-exec-9] c.h.t.mapper.OrderDetailMapper.insert    : ==>  Preparing: INSERT INTO order_detail ( order_id, item_id, num, name, spec, price, image ) VALUES ( ?, ?, ?, ?, ?, ?, ? )
+11:35:08:993 DEBUG 19252 --- [http-nio-8084-exec-9] c.h.t.mapper.OrderDetailMapper.insert    : ==> Parameters: 1834435621444599809(Long), 5018712(Long), 1(Integer), 巴布豆(BOBDOG)超薄婴儿拉拉裤L132片(9-14kg)(String), {}(String), 63700(Integer), https://m.360buyimg.com/mobilecms/s720x720_jfs/t24688/250/275231566/279821/ff39785b/5b6aa006Nf0d1c4b6.jpg!q70.jpg.webp(String)
+11:35:09:000 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> PUT http://item-service/items/stock/deduct HTTP/1.1
+11:35:09:000 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Length: 30
+11:35:09:000 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] Content-Type: application/json
+11:35:09:000 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] user-info: 1
+11:35:09:001 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+11:35:09:001 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] [{"itemId":"5018712","num":1}]
+11:35:09:001 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] ---> END HTTP (30-byte body)
+11:35:09:036 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- HTTP/1.1 200 (34ms)
+11:35:09:036 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] connection: keep-alive
+11:35:09:036 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] content-length: 0
+11:35:09:036 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] date: Fri, 13 Sep 2024 03:35:08 GMT
+11:35:09:036 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] keep-alive: timeout=60
+11:35:09:036 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] 
+11:35:09:036 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.ItemClient          : [ItemClient#deductStock] <--- END HTTP (0-byte body)
+11:35:09:038 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> DELETE http://cart-service/carts?ids=5018712 HTTP/1.1
+11:35:09:038 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] user-info: 1
+11:35:09:038 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] ---> END HTTP (0-byte body)
+11:35:09:052 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- HTTP/1.1 200 (13ms)
+11:35:09:052 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] connection: keep-alive
+11:35:09:052 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] content-length: 0
+11:35:09:052 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] date: Fri, 13 Sep 2024 03:35:09 GMT
+11:35:09:052 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] keep-alive: timeout=60
+11:35:09:052 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] 
+11:35:09:052 DEBUG 19252 --- [http-nio-8084-exec-9] com.hmall.api.client.CartClient          : [CartClient#removeByItemIds] <--- END HTTP (0-byte body)
+11:35:09:204 DEBUG 19252 --- [http-nio-8084-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:35:09:205 DEBUG 19252 --- [http-nio-8084-exec-10] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1834435621444599809(Long)
+11:35:09:211 DEBUG 19252 --- [http-nio-8084-exec-10] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
+11:35:14:147 DEBUG 19252 --- [http-nio-8084-exec-1] c.h.trade.mapper.OrderMapper.updateById  : ==>  Preparing: UPDATE `order` SET status=?, pay_time=? WHERE id=?
+11:35:14:148 DEBUG 19252 --- [http-nio-8084-exec-1] c.h.trade.mapper.OrderMapper.updateById  : ==> Parameters: 2(Integer), 2024-09-13T11:35:14.144451900(LocalDateTime), 1834435621444599809(Long)
+11:35:14:152 DEBUG 19252 --- [http-nio-8084-exec-1] c.h.trade.mapper.OrderMapper.updateById  : <==    Updates: 1
+11:35:14:262 DEBUG 19252 --- [http-nio-8084-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==>  Preparing: SELECT id,total_fee,payment_type,user_id,status,create_time,pay_time,consign_time,end_time,close_time,comment_time,update_time FROM `order` WHERE id=?
+11:35:14:263 DEBUG 19252 --- [http-nio-8084-exec-2] c.h.trade.mapper.OrderMapper.selectById  : ==> Parameters: 1834435621444599809(Long)
+11:35:14:266 DEBUG 19252 --- [http-nio-8084-exec-2] c.h.trade.mapper.OrderMapper.selectById  : <==      Total: 1
