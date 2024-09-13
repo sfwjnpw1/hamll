@@ -414,3 +414,87 @@ Identify and stop the process that's listening on port 8083 or configure this ap
 11:13:05:954  INFO 13872 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@34bfae28[Running, pool size = 6, active threads = 0, queued tasks = 0, completed tasks = 7572]
 11:13:06:003  INFO 13872 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 11:13:06:021  INFO 13872 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+11:16:19:338  INFO 21012 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11.0.24 on HUAWEI-PC with PID 21012 (E:\JavaProject\SpringBoot\itheima\hmall\user-service\target\classes started by 表里不一 in E:\JavaProject\SpringBoot\itheima\hmall)
+11:16:19:344 DEBUG 21012 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+11:16:19:345  INFO 21012 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+11:16:21:807  INFO 21012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:16:21:812  INFO 21012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:16:21:855  INFO 21012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+11:16:22:319  INFO 21012 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73429dcb-f2ab-31d2-9b80-7ce65e2263b1
+11:16:23:053  INFO 21012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+11:16:23:055  INFO 21012 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+11:16:23:056  INFO 21012 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+11:16:23:056  INFO 21012 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+11:16:23:067  INFO 21012 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+11:16:23:084  INFO 21012 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:16:23:084  INFO 21012 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+11:16:23:405  INFO 21012 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:16:23:406  INFO 21012 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3953 ms
+11:16:23:703  INFO 21012 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+11:16:23:877  INFO 21012 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+11:16:31:641  INFO 21012 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+11:16:31:762  INFO 21012 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+11:16:34:248  INFO 21012 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+11:16:34:500  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 84cb3569-da10-4477-9a7e-783710ae62cd
+11:16:34:552  INFO 21012 --- [main] org.reflections.Reflections              : Reflections took 27 ms to scan 1 urls, producing 3 keys and 6 values 
+11:16:34:581  INFO 21012 --- [main] org.reflections.Reflections              : Reflections took 12 ms to scan 1 urls, producing 4 keys and 9 values 
+11:16:34:597  INFO 21012 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 3 keys and 10 values 
+11:16:34:601  WARN 21012 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+11:16:34:614  INFO 21012 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+11:16:34:627  INFO 21012 --- [main] org.reflections.Reflections              : Reflections took 10 ms to scan 1 urls, producing 1 keys and 7 values 
+11:16:34:640  INFO 21012 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
+11:16:34:643  WARN 21012 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+11:16:34:645  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] RpcClient init label, labels = {module=naming, source=sdk}
+11:16:34:649  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+11:16:34:649  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+11:16:34:650  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+11:16:34:654  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+11:16:38:012  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Success to connect to server [localhost:8848] on start up, connectionId = 1726197397773_127.0.0.1_37000
+11:16:38:013  INFO 21012 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Notify connected event to listeners.
+11:16:38:014  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+11:16:38:015  INFO 21012 --- [main] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1091/0x0000000800824840
+11:16:38:078  INFO 21012 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+11:16:38:089  INFO 21012 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 26.10.64.202:8083 register finished
+11:16:38:543  INFO 21012 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Receive server push request, request = NotifySubscriberRequest, requestId = 110
+11:16:38:547  INFO 21012 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [84cb3569-da10-4477-9a7e-783710ae62cd] Ack server push request, request = NotifySubscriberRequest, requestId = 110
+11:16:39:892  INFO 21012 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+11:16:39:893  INFO 21012 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+11:16:39:897  INFO 21012 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+11:16:39:938  INFO 21012 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+11:16:40:074  INFO 21012 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 24.723 seconds (JVM running for 28.35)
+11:16:49:073  INFO 21012 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:16:49:073  INFO 21012 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+11:16:49:075  INFO 21012 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+11:16:49:773 DEBUG 21012 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+11:16:49:807 DEBUG 21012 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+11:16:49:881 DEBUG 21012 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+11:17:05:760 DEBUG 21012 --- [http-nio-8083-exec-4] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+11:17:05:761 DEBUG 21012 --- [http-nio-8083-exec-4] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: rose(String)
+11:17:05:764 DEBUG 21012 --- [http-nio-8083-exec-4] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+11:17:06:344 DEBUG 21012 --- [http-nio-8083-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+11:17:06:345 DEBUG 21012 --- [http-nio-8083-exec-3] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 2(Long)
+11:17:06:361 DEBUG 21012 --- [http-nio-8083-exec-3] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 0
+11:18:39:541  INFO 21012 --- [http-nio-8083-exec-5] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+11:18:39:558 ERROR 21012 --- [http-nio-8083-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 93188
+11:18:39:590 DEBUG 21012 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+11:18:39:590 DEBUG 21012 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 2(Long)
+11:18:39:593 DEBUG 21012 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+11:18:39:695 DEBUG 21012 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 9700 where id = ?
+11:18:39:695 DEBUG 21012 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 2(Long)
+11:18:39:702 DEBUG 21012 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+11:18:39:703  INFO 21012 --- [http-nio-8083-exec-5] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+11:34:54:369 ERROR 21012 --- [http-nio-8083-exec-7] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 974666
+11:34:54:433 DEBUG 21012 --- [http-nio-8083-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+11:34:54:433 DEBUG 21012 --- [http-nio-8083-exec-7] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+11:34:54:438 DEBUG 21012 --- [http-nio-8083-exec-7] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+11:35:03:181 DEBUG 21012 --- [http-nio-8083-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+11:35:03:182 DEBUG 21012 --- [http-nio-8083-exec-8] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+11:35:03:189 DEBUG 21012 --- [http-nio-8083-exec-8] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+11:35:14:005  INFO 21012 --- [http-nio-8083-exec-9] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+11:35:14:006 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+11:35:14:006 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 1(Long)
+11:35:14:009 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+11:35:14:121 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 63700 where id = ?
+11:35:14:122 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 1(Long)
+11:35:14:129 DEBUG 21012 --- [http-nio-8083-exec-9] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+11:35:14:129  INFO 21012 --- [http-nio-8083-exec-9] c.h.user.service.impl.UserServiceImpl    : 扣款成功
