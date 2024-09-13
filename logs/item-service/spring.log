@@ -1,80 +1,236 @@
-00:01:37:055 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
-00:01:37:142 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
-00:01:37:188 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
-00:02:32:360 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
-00:02:32:361 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
-00:02:32:371 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
-00:38:24:199 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
-00:38:24:212 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
-00:38:24:227 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
-00:49:13:135 ERROR 21160 --- [http-nio-8081-exec-9] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 648908
-00:49:13:178 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
-00:49:13:178 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
-00:49:13:204 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
-00:53:44:046 ERROR 21160 --- [http-nio-8081-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 270861
-00:53:44:085 DEBUG 21160 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
-00:53:44:086 DEBUG 21160 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
-00:53:44:090 DEBUG 21160 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
-12:04:16:471  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Server healthy check fail, currentConnection = 1725951649427_127.0.0.1_15256
-12:04:16:505  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-12:04:19:615  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Success to connect a server [localhost:8848], connectionId = 1726027458584_127.0.0.1_15650
-12:04:19:616  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Abandon prev connection, server is localhost:8848, connectionId is 1725951649427_127.0.0.1_15256
-12:04:19:616  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1725951649427_127.0.0.1_15256
-12:04:19:618  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify disconnected event to listeners
-12:04:19:630  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify connected event to listeners.
-12:04:19:991  WARN 21160 --- [nacos-grpc-client-executor-15662] c.a.n.c.remote.client.grpc.GrpcClient    : [1725951649427_127.0.0.1_15256]Ignore error event,isRunning:true,isAbandon=true
-12:04:20:373  INFO 21160 --- [nacos-grpc-client-executor-15665] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Receive server push request, request = NotifySubscriberRequest, requestId = 26
-12:04:20:374  INFO 21160 --- [nacos-grpc-client-executor-15665] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Ack server push request, request = NotifySubscriberRequest, requestId = 26
-16:49:41:537  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Server healthy check fail, currentConnection = 1726027458584_127.0.0.1_15650
-16:49:41:556  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-16:49:41:647 ERROR 21160 --- [com.alibaba.nacos.client.naming.updater.1] com.alibaba.nacos.common.remote.client   : Send request fail, request = ServiceQueryRequest{headers={}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 3757 milliseconds, 513700 nanoseconds delay) but future completed as timeout expired
-16:49:44:987  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Success to connect a server [localhost:8848], connectionId = 1726044583884_127.0.0.1_32217
-16:49:44:987  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Abandon prev connection, server is localhost:8848, connectionId is 1726027458584_127.0.0.1_15650
-16:49:44:989  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1726027458584_127.0.0.1_15650
-16:49:45:270  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify disconnected event to listeners
-16:49:45:273  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify connected event to listeners.
-16:49:45:537  INFO 21160 --- [nacos-grpc-client-executor-19136] c.a.n.c.remote.client.grpc.GrpcClient    : [1726027458584_127.0.0.1_15650]Ignore complete event,isRunning:true,isAbandon=true
-16:49:48:547  INFO 21160 --- [nacos-grpc-client-executor-19140] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Receive server push request, request = NotifySubscriberRequest, requestId = 31
-16:49:48:582  INFO 21160 --- [nacos-grpc-client-executor-19140] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Ack server push request, request = NotifySubscriberRequest, requestId = 31
-12:04:16:471  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Server healthy check fail, currentConnection = 1725951649427_127.0.0.1_15256
-12:04:16:505  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-12:04:19:615  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Success to connect a server [localhost:8848], connectionId = 1726027458584_127.0.0.1_15650
-12:04:19:616  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Abandon prev connection, server is localhost:8848, connectionId is 1725951649427_127.0.0.1_15256
-12:04:19:616  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1725951649427_127.0.0.1_15256
-12:04:19:618  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify disconnected event to listeners
-12:04:19:630  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify connected event to listeners.
-12:04:19:991  WARN 21160 --- [nacos-grpc-client-executor-15662] c.a.n.c.remote.client.grpc.GrpcClient    : [1725951649427_127.0.0.1_15256]Ignore error event,isRunning:true,isAbandon=true
-12:04:20:373  INFO 21160 --- [nacos-grpc-client-executor-15665] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Receive server push request, request = NotifySubscriberRequest, requestId = 26
-12:04:20:374  INFO 21160 --- [nacos-grpc-client-executor-15665] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Ack server push request, request = NotifySubscriberRequest, requestId = 26
-16:49:41:537  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Server healthy check fail, currentConnection = 1726027458584_127.0.0.1_15650
-16:49:41:556  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-16:49:41:647 ERROR 21160 --- [com.alibaba.nacos.client.naming.updater.1] com.alibaba.nacos.common.remote.client   : Send request fail, request = ServiceQueryRequest{headers={}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 3757 milliseconds, 513700 nanoseconds delay) but future completed as timeout expired
-16:49:44:987  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Success to connect a server [localhost:8848], connectionId = 1726044583884_127.0.0.1_32217
-16:49:44:987  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Abandon prev connection, server is localhost:8848, connectionId is 1726027458584_127.0.0.1_15650
-16:49:44:989  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1726027458584_127.0.0.1_15650
-16:49:45:270  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify disconnected event to listeners
-16:49:45:273  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify connected event to listeners.
-16:49:45:537  INFO 21160 --- [nacos-grpc-client-executor-19136] c.a.n.c.remote.client.grpc.GrpcClient    : [1726027458584_127.0.0.1_15650]Ignore complete event,isRunning:true,isAbandon=true
-16:49:48:547  INFO 21160 --- [nacos-grpc-client-executor-19140] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Receive server push request, request = NotifySubscriberRequest, requestId = 31
-16:49:48:582  INFO 21160 --- [nacos-grpc-client-executor-19140] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Ack server push request, request = NotifySubscriberRequest, requestId = 31
-12:04:16:471  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Server healthy check fail, currentConnection = 1725951649427_127.0.0.1_15256
-12:04:16:505  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-12:04:19:615  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Success to connect a server [localhost:8848], connectionId = 1726027458584_127.0.0.1_15650
-12:04:19:616  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Abandon prev connection, server is localhost:8848, connectionId is 1725951649427_127.0.0.1_15256
-12:04:19:616  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1725951649427_127.0.0.1_15256
-12:04:19:618  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify disconnected event to listeners
-12:04:19:630  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify connected event to listeners.
-12:04:19:991  WARN 21160 --- [nacos-grpc-client-executor-15662] c.a.n.c.remote.client.grpc.GrpcClient    : [1725951649427_127.0.0.1_15256]Ignore error event,isRunning:true,isAbandon=true
-12:04:20:373  INFO 21160 --- [nacos-grpc-client-executor-15665] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Receive server push request, request = NotifySubscriberRequest, requestId = 26
-12:04:20:374  INFO 21160 --- [nacos-grpc-client-executor-15665] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Ack server push request, request = NotifySubscriberRequest, requestId = 26
-16:49:41:537  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Server healthy check fail, currentConnection = 1726027458584_127.0.0.1_15650
-16:49:41:556  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Try to reconnect to a new server, server is  not appointed, will choose a random server.
-16:49:41:647 ERROR 21160 --- [com.alibaba.nacos.client.naming.updater.1] com.alibaba.nacos.common.remote.client   : Send request fail, request = ServiceQueryRequest{headers={}, requestId='null'}, retryTimes = 0, errorMessage = java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 3757 milliseconds, 513700 nanoseconds delay) but future completed as timeout expired
-16:49:44:987  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Success to connect a server [localhost:8848], connectionId = 1726044583884_127.0.0.1_32217
-16:49:44:987  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Abandon prev connection, server is localhost:8848, connectionId is 1726027458584_127.0.0.1_15650
-16:49:44:989  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1726027458584_127.0.0.1_15650
-16:49:45:270  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify disconnected event to listeners
-16:49:45:273  INFO 21160 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Notify connected event to listeners.
-16:49:45:537  INFO 21160 --- [nacos-grpc-client-executor-19136] c.a.n.c.remote.client.grpc.GrpcClient    : [1726027458584_127.0.0.1_15650]Ignore complete event,isRunning:true,isAbandon=true
-16:49:48:547  INFO 21160 --- [nacos-grpc-client-executor-19140] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Receive server push request, request = NotifySubscriberRequest, requestId = 31
-16:49:48:582  INFO 21160 --- [nacos-grpc-client-executor-19140] com.alibaba.nacos.common.remote.client   : [73e304c3-ba65-473a-9f23-140aa6c55931] Ack server push request, request = NotifySubscriberRequest, requestId = 31
+00:28:11:647 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+00:28:11:677 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+00:28:11:767 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+00:28:11:770 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+00:28:11:771 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Long)
+00:28:11:786 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 1
+00:28:12:465 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+00:28:12:467 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+00:28:12:471 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+00:28:12:473 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+00:28:12:473 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Long)
+00:28:12:475 DEBUG 21160 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 1
+00:28:18:985 DEBUG 21160 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+00:28:18:986 DEBUG 21160 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+00:28:18:992 DEBUG 21160 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+00:28:18:996 DEBUG 21160 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+00:28:18:996 DEBUG 21160 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 2(Long)
+00:28:18:999 DEBUG 21160 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 2
+00:30:29:804 ERROR 21160 --- [http-nio-8081-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 130802
+00:30:29:835 DEBUG 21160 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+00:30:29:835 DEBUG 21160 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+00:30:29:846 DEBUG 21160 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+00:30:29:848 DEBUG 21160 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+00:30:29:848 DEBUG 21160 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 2(Long)
+00:30:29:851 DEBUG 21160 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 2
+00:30:33:426 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+00:30:33:427 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+00:30:33:434 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+00:30:33:435 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+00:30:33:436 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Long)
+00:30:33:438 DEBUG 21160 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 1
+00:38:17:485 ERROR 21160 --- [http-nio-8081-exec-5] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 464047
+00:38:17:531 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+00:38:17:531 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+00:38:17:543 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+00:38:17:545 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+00:38:17:545 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Long)
+00:38:17:549 DEBUG 21160 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 1
+00:38:21:746 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+00:38:21:748 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+00:38:21:753 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+00:38:21:755 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+00:38:21:756 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 2(Long)
+00:38:21:758 DEBUG 21160 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 2
+00:47:36:866  INFO 21792 --- [main] com.hmall.item.ItemApplication           : Starting ItemApplication using Java 11.0.24 on HUAWEI-PC with PID 21792 (E:\JavaProject\SpringBoot\itheima\hmall\item-service\target\classes started by 表里不一 in E:\JavaProject\SpringBoot\itheima\hmall)
+00:47:36:872 DEBUG 21792 --- [main] com.hmall.item.ItemApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+00:47:36:874  INFO 21792 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "dev"
+00:47:39:253  INFO 21792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+00:47:39:261  INFO 21792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+00:47:39:345  INFO 21792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+00:47:39:887  INFO 21792 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c97b9f78-a347-3bc8-a59b-2fe484ab1a57
+00:47:40:880  INFO 21792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+00:47:40:882  INFO 21792 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+00:47:40:883  INFO 21792 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+00:47:40:883  INFO 21792 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+00:47:40:894  INFO 21792 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+00:47:40:915  INFO 21792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+00:47:40:916  INFO 21792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+00:47:41:295  INFO 21792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+00:47:41:296  INFO 21792 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4272 ms
+00:47:41:752  INFO 21792 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+00:47:42:093  INFO 21792 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+00:47:50:496  INFO 21792 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:47:50:589  INFO 21792 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+00:47:54:041  INFO 21792 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:47:54:363  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of ac6f6f93-9562-4a26-a17a-87e1aad1664f
+00:47:54:494  INFO 21792 --- [main] org.reflections.Reflections              : Reflections took 76 ms to scan 1 urls, producing 3 keys and 6 values 
+00:47:54:553  INFO 21792 --- [main] org.reflections.Reflections              : Reflections took 23 ms to scan 1 urls, producing 4 keys and 9 values 
+00:47:54:587  INFO 21792 --- [main] org.reflections.Reflections              : Reflections took 27 ms to scan 1 urls, producing 3 keys and 10 values 
+00:47:54:596  WARN 21792 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+00:47:54:622  INFO 21792 --- [main] org.reflections.Reflections              : Reflections took 25 ms to scan 1 urls, producing 1 keys and 5 values 
+00:47:54:651  INFO 21792 --- [main] org.reflections.Reflections              : Reflections took 23 ms to scan 1 urls, producing 1 keys and 7 values 
+00:47:54:686  INFO 21792 --- [main] org.reflections.Reflections              : Reflections took 24 ms to scan 1 urls, producing 2 keys and 8 values 
+00:47:54:691  WARN 21792 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+00:47:54:693  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] RpcClient init label, labels = {module=naming, source=sdk}
+00:47:54:698  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+00:47:54:699  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+00:47:54:700  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+00:47:54:704  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+00:48:00:012 ERROR 21792 --- [main] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server localhost ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 12 milliseconds, 844700 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@47fc9ce[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@d17d554, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@1f1c7fde, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2b409174}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.start(RpcClient.java:390) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.start(NamingGrpcClientProxy.java:96) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.gprc.NamingGrpcClientProxy.<init>(NamingGrpcClientProxy.java:89) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.remote.NamingClientProxyDelegate.<init>(NamingClientProxyDelegate.java:76) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:95) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:81) ~[nacos-client-2.0.4.jar:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[na:na]
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:59) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:77) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.cloud.nacos.NacosServiceManager.createNewNamingService(NacosServiceManager.java:99) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.buildNamingService(NacosServiceManager.java:90) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.NacosServiceManager.getNamingService(NacosServiceManager.java:46) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.start(NacosWatch.java:130) ~[spring-cloud-starter-alibaba-nacos-discovery-2021.0.4.0.jar:2021.0.4.0]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.27.jar:5.3.27]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:937) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.item.ItemApplication.main(ItemApplication.java:11) ~[classes/:na]
+
+00:48:00:029  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+00:48:00:566  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Success to connect to server [localhost:8848] on start up, connectionId = 1726159680191_127.0.0.1_40114
+00:48:00:567  INFO 21792 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Notify connected event to listeners.
+00:48:00:569  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+00:48:00:569  INFO 21792 --- [main] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$1059/0x00000008007ef040
+00:48:00:690  INFO 21792 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+00:48:00:725  INFO 21792 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 26.10.64.202:8081 register finished
+00:48:01:176  INFO 21792 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Receive server push request, request = NotifySubscriberRequest, requestId = 74
+00:48:01:186  INFO 21792 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [ac6f6f93-9562-4a26-a17a-87e1aad1664f] Ack server push request, request = NotifySubscriberRequest, requestId = 74
+00:48:03:793  INFO 21792 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:48:03:794  INFO 21792 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+00:48:03:801  INFO 21792 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+00:48:03:872  INFO 21792 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+00:48:04:188  INFO 21792 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 31.553 seconds (JVM running for 34.113)
+00:49:06:017  INFO 21792 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:49:06:018  INFO 21792 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+00:49:06:020  INFO 21792 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+01:00:28:964 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+01:00:29:006 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+01:00:29:106 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+01:00:29:126 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+01:00:29:127 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Long)
+01:00:29:139 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 1
+02:02:12:868 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+02:02:12:872 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+02:02:12:898 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+02:02:12:901 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+02:02:12:901 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+02:02:12:934 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+02:04:03:906 ERROR 21792 --- [http-nio-8081-exec-10] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 110970
+02:04:03:967 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+02:04:03:968 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+02:04:04:017 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+02:04:04:019 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+02:04:04:019 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Long)
+02:04:04:023 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 1
+02:04:16:654 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+02:04:16:654 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+02:04:16:662 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+02:04:16:666 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+02:04:16:667 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 20(Long)
+02:04:16:674 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+02:06:08:817 ERROR 21792 --- [http-nio-8081-exec-3] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 112145
+02:06:08:874 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+02:06:08:875 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+02:06:08:888 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+02:06:08:891 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+02:06:08:892 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+02:06:08:904 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+02:06:36:610 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+02:06:36:611 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
+02:06:36:614 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+02:06:36:742 DEBUG 21792 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+02:06:36:742 DEBUG 21792 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
+02:06:36:744 DEBUG 21792 --- [http-nio-8081-exec-5] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+02:09:21:762 ERROR 21792 --- [http-nio-8081-exec-8] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 165017
+02:09:21:798 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item
+02:09:21:798 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 
+02:09:21:808 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+02:09:21:810 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item ORDER BY update_time DESC LIMIT ?
+02:09:21:810 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Long)
+02:09:21:811 DEBUG 21792 --- [http-nio-8081-exec-8] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 1
+02:09:32:208 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+02:09:32:208 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
+02:09:32:211 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+02:09:34:360 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+02:09:34:367 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
+02:09:34:375 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+02:45:05:402 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+02:45:05:436 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
+02:45:05:461 DEBUG 21792 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+02:45:09:451 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+02:45:09:455 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5018712(Long)
+02:45:09:458 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+02:48:23:696 ERROR 21792 --- [http-nio-8081-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 194236
+02:48:23:759 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+02:48:23:759 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+02:48:23:771 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+02:48:23:775 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+02:48:23:775 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+02:48:23:789 DEBUG 21792 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+02:48:27:044 DEBUG 21792 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+02:48:27:046 DEBUG 21792 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+02:48:27:066 DEBUG 21792 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+02:48:27:071 DEBUG 21792 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+02:48:27:074 DEBUG 21792 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+02:48:27:087 DEBUG 21792 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+11:08:48:523 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+11:08:48:534 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+11:08:48:556 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+11:08:48:558 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+11:08:48:559 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+11:08:48:573 DEBUG 21792 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+11:08:49:927 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+11:08:49:928 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+11:08:49:935 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+11:08:49:939 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+11:08:49:954 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+11:08:49:965 DEBUG 21792 --- [http-nio-8081-exec-10] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+11:08:53:274 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+11:08:53:278 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 1533902(Long)
+11:08:53:284 DEBUG 21792 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+11:11:37:533 ERROR 21792 --- [http-nio-8081-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 164247
+11:11:37:564 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+11:11:37:564 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 1533902(Long)
+11:11:37:569 DEBUG 21792 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+11:13:03:819  WARN 21792 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+11:13:03:818  WARN 21792 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+11:13:03:820  WARN 21792 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+11:13:03:834  WARN 21792 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+11:13:05:071  INFO 21792 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+11:13:05:085  INFO 21792 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+11:13:05:421  INFO 21792 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+11:13:05:422  INFO 21792 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@26642cc0[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+11:13:05:423  INFO 21792 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1726159680191_127.0.0.1_40114
+11:13:05:433  INFO 21792 --- [nacos-grpc-client-executor-7584] c.a.n.c.remote.client.grpc.GrpcClient    : [1726159680191_127.0.0.1_40114]Ignore complete event,isRunning:false,isAbandon=false
+11:13:05:458  INFO 21792 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@58985c40[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 7585]
+11:13:05:513  INFO 21792 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+11:13:05:533  INFO 21792 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
