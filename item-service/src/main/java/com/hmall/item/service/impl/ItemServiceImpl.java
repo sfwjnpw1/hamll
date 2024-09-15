@@ -1,5 +1,6 @@
 package com.hmall.item.service.impl;
 
+import com.alibaba.nacos.common.utils.ThreadUtils;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.common.exception.BizIllegalException;
 import com.hmall.common.utils.BeanUtils;
@@ -40,6 +41,8 @@ public class ItemServiceImpl extends ServiceImpl<ItemMapper, Item> implements II
 
     @Override
     public List<ItemDTO> queryItemByIds(Collection<Long> ids) {
+        // 导nacos的包，模拟业务延迟
+        ThreadUtils.sleep(500);
         return BeanUtils.copyList(listByIds(ids), ItemDTO.class);
     }
 }
