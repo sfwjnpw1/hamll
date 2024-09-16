@@ -4758,3 +4758,209 @@ io.seata.common.exception.FrameworkException: can not register RM,err:can not co
 14:23:29:026  INFO 32684 --- [rpcDispatch_RMROLE_1_8_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:874263700125230090 874263700125230096 jdbc:mysql://localhost:3306/hm-item null
 14:23:29:026  INFO 32684 --- [rpcDispatch_RMROLE_1_8_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
 14:25:05:549 ERROR 32684 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 60004
+13:46:54:991  INFO 32684 --- [main] com.hmall.item.ItemApplication           : The following 1 profile is active: "dev"
+13:46:57:280  INFO 32684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+13:46:57:285  INFO 32684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+13:46:57:332  INFO 32684 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+13:46:57:830  INFO 32684 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abeef950-a6c9-3e98-9f32-c6dfa67f50f6
+13:46:57:957  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:57:958  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:57:958  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:58:021  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:58:029  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:58:033  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:58:034  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$588/0x000000080067e440] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:58:037  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:58:048  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:58:053  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:46:58:058  INFO 32684 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+13:46:58:200  INFO 32684 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+13:46:58:208  INFO 32684 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+13:46:58:351  INFO 32684 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+13:46:58:498  INFO 32684 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+13:46:58:778  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 64995fec-723f-46f9-9c02-63ee5b2770ab
+13:46:58:779  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] RpcClient init label, labels = {module=naming, source=sdk}
+13:46:58:783  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+13:46:58:783  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+13:46:58:784  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+13:46:58:785  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+13:46:58:931  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Success to connect to server [localhost:8848] on start up, connectionId = 1726465618806_127.0.0.1_25731
+13:46:58:931  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+13:46:58:931  INFO 32684 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Notify connected event to listeners.
+13:46:58:932  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800560040
+13:46:59:018  INFO 32684 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
+13:46:59:515  INFO 32684 --- [nacos-grpc-client-executor-4] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Receive server push request, request = NotifySubscriberRequest, requestId = 141
+13:46:59:518  INFO 32684 --- [nacos-grpc-client-executor-4] com.alibaba.nacos.common.remote.client   : [64995fec-723f-46f9-9c02-63ee5b2770ab] Ack server push request, request = NotifySubscriberRequest, requestId = 141
+13:47:00:656  INFO 32684 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:26.10.64.202:8099,msg:< RegisterTMRequest{applicationId='item-service', transactionServiceGroup='hmall'} >
+13:47:02:464  INFO 32684 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x4fd3ce9d, L:/26.10.64.202:25771 - R:/26.10.64.202:8099]
+13:47:02:480  INFO 32684 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 153 ms, version:2.0.0,role:TMROLE,channel:[id: 0x4fd3ce9d, L:/26.10.64.202:25771 - R:/26.10.64.202:8099]
+13:47:02:482  INFO 32684 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[item-service] txServiceGroup[hmall]
+13:47:02:501  INFO 32684 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+13:47:02:503  INFO 32684 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+13:47:02:521  INFO 32684 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+13:47:02:521  INFO 32684 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[item-service] txServiceGroup[hmall]
+13:47:02:522  INFO 32684 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+13:47:02:526  INFO 32684 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:47:03:367  INFO 32684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+13:47:03:368  INFO 32684 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+13:47:03:370  INFO 32684 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+13:47:03:370  INFO 32684 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+13:47:03:385  INFO 32684 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+13:47:03:404  INFO 32684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+13:47:03:405  INFO 32684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+13:47:03:962  INFO 32684 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+13:47:03:963  INFO 32684 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8927 ms
+13:47:04:392  INFO 32684 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+13:47:04:630  INFO 32684 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+13:47:05:509  INFO 32684 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
+13:47:05:509  INFO 32684 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://localhost:3306/hm-item
+13:47:05:510  INFO 32684 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:26.10.64.202:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/hm-item', applicationId='item-service', transactionServiceGroup='hmall'} >
+13:47:05:531  INFO 32684 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x58b58ec6, L:/26.10.64.202:25797 - R:/26.10.64.202:8099]
+13:47:05:531  INFO 32684 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 15 ms, version:2.0.0,role:RMROLE,channel:[id: 0x58b58ec6, L:/26.10.64.202:25797 - R:/26.10.64.202:8099]
+13:47:16:279  INFO 32684 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+13:47:16:403  INFO 32684 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+13:47:20:404  INFO 32684 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+13:47:20:740  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 62d64b66-4687-4295-8686-83c6d57d2355
+13:47:20:741  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] RpcClient init label, labels = {module=naming, source=sdk}
+13:47:20:742  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+13:47:20:742  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+13:47:20:742  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+13:47:20:742  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+13:47:20:877  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Success to connect to server [localhost:8848] on start up, connectionId = 1726465640760_127.0.0.1_25885
+13:47:20:877  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+13:47:20:877  INFO 32684 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Notify connected event to listeners.
+13:47:20:877  INFO 32684 --- [main] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800560040
+13:47:20:917  INFO 32684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+13:47:20:932  INFO 32684 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP item-service 26.10.64.202:8081 register finished
+13:47:21:459  INFO 32684 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Receive server push request, request = NotifySubscriberRequest, requestId = 146
+13:47:21:464  INFO 32684 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [62d64b66-4687-4295-8686-83c6d57d2355] Ack server push request, request = NotifySubscriberRequest, requestId = 146
+13:47:23:771  INFO 32684 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+13:47:23:772  INFO 32684 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+13:47:23:777  INFO 32684 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+13:47:23:826  INFO 32684 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+13:47:24:069  INFO 32684 --- [main] com.hmall.item.ItemApplication           : Started ItemApplication in 43.318 seconds (JVM running for 46.67)
+13:47:24:077  INFO 32684 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service-dev.yaml, group=DEFAULT_GROUP
+13:47:24:078  INFO 32684 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service.yaml, group=DEFAULT_GROUP
+13:47:24:079  INFO 32684 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=item-service, group=DEFAULT_GROUP
+13:48:29:350  INFO 32684 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:48:29:350  INFO 32684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+13:48:29:353  INFO 32684 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+13:48:29:459 DEBUG 32684 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+13:48:29:482 DEBUG 32684 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 2120808(Long)
+13:48:29:510 DEBUG 32684 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+13:48:35:051 DEBUG 32684 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+13:48:35:129 DEBUG 32684 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 2120808(Long)
+13:48:35:134 DEBUG 32684 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+13:48:36:174  WARN 32684 --- [http-nio-8081-exec-5] c.h.item.service.impl.ItemServiceImpl    : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e5fda3c] Transaction not enabled
+13:48:36:174 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+13:48:36:203 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 2120808(Long)
+13:48:37:058  INFO 32684 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:874263700125229057,branchId=874263700125229065,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-item,applicationData=null
+13:48:37:060  INFO 32684 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:874263700125229057 874263700125229065 jdbc:mysql://localhost:3306/hm-item null
+13:48:37:062  INFO 32684 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:49:02:718 DEBUG 32684 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+13:49:02:719 DEBUG 32684 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 2120808(Long)
+13:49:02:722 DEBUG 32684 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+13:49:02:771  WARN 32684 --- [http-nio-8081-exec-9] c.h.item.service.impl.ItemServiceImpl    : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54465b35] Transaction not enabled
+13:49:02:772 DEBUG 32684 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+13:49:02:772 DEBUG 32684 --- [http-nio-8081-exec-9] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 2120808(Long)
+13:49:03:249  INFO 32684 --- [rpcDispatch_RMROLE_1_2_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:874263700125229070,branchId=874263700125229076,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-item,applicationData=null
+13:49:03:249  INFO 32684 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:874263700125229070 874263700125229076 jdbc:mysql://localhost:3306/hm-item null
+13:49:03:249  INFO 32684 --- [rpcDispatch_RMROLE_1_2_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:49:16:081  INFO 32684 --- [rpcDispatch_RMROLE_1_3_16] i.s.c.r.p.client.RmUndoLogProcessor      : rm handle undo log process:UndoLogDeleteRequest{resourceId='jdbc:mysql://localhost:3306/hm-item', saveDays=7, branchType=AT}
+13:51:57:225 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+13:51:57:226 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+13:51:57:234 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+13:51:57:248 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+13:51:57:249 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+13:51:57:263 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+13:52:03:530 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+13:52:03:530 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+13:52:03:532 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+13:52:07:442 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+13:52:07:443 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long)
+13:52:07:445 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+13:52:07:502  WARN 32684 --- [http-nio-8081-exec-1] c.h.item.service.impl.ItemServiceImpl    : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42c458f0] Transaction not enabled
+13:52:07:503 DEBUG 32684 --- [http-nio-8081-exec-1] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+13:52:07:503 DEBUG 32684 --- [http-nio-8081-exec-1] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 8533120(Long)
+13:52:08:031  INFO 32684 --- [rpcDispatch_RMROLE_1_4_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:874263700125229079,branchId=874263700125229085,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-item,applicationData=null
+13:52:08:031  INFO 32684 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:874263700125229079 874263700125229085 jdbc:mysql://localhost:3306/hm-item null
+13:52:08:031  INFO 32684 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+13:56:59:010 DEBUG 32684 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? , ? )
+13:56:59:011 DEBUG 32684 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 2030774(Long), 1533902(Long)
+13:56:59:013 DEBUG 32684 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 3
+13:57:02:717 DEBUG 32684 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? , ? )
+13:57:02:718 DEBUG 32684 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 2030774(Long), 1533902(Long)
+13:57:02:721 DEBUG 32684 --- [http-nio-8081-exec-3] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 3
+13:57:03:466 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? , ? )
+13:57:03:467 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 2030774(Long), 1533902(Long)
+13:57:03:469 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 3
+13:57:05:024 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? , ? )
+13:57:05:024 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 2030774(Long), 1533902(Long)
+13:57:05:027 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 3
+13:57:10:462 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? , ? , ? )
+13:57:10:462 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 8533120(Long), 2030774(Long), 1533902(Long)
+13:57:10:464 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 3
+13:57:10:529  WARN 32684 --- [http-nio-8081-exec-7] c.h.item.service.impl.ItemServiceImpl    : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7688c0bf] Transaction not enabled
+13:57:10:530 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+13:57:10:531 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 1533902(Long)
+13:57:10:532 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 2030774(Long)
+13:57:10:532 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 2(Integer), 8533120(Long)
+13:57:11:033  INFO 32684 --- [rpcDispatch_RMROLE_1_5_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:874263700125229090,branchId=874263700125229096,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-item,applicationData=null
+13:57:11:033  INFO 32684 --- [rpcDispatch_RMROLE_1_5_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:874263700125229090 874263700125229096 jdbc:mysql://localhost:3306/hm-item null
+13:57:11:033  INFO 32684 --- [rpcDispatch_RMROLE_1_5_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+14:00:34:230 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+14:00:34:230 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+14:00:34:235 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+14:00:34:237 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+14:00:34:237 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+14:00:34:242 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+14:00:38:231 DEBUG 32684 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+14:00:38:231 DEBUG 32684 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 1861102(Long)
+14:00:38:233 DEBUG 32684 --- [http-nio-8081-exec-8] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+14:00:43:120 DEBUG 32684 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+14:00:43:121 DEBUG 32684 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 1861102(Long)
+14:00:43:124 DEBUG 32684 --- [http-nio-8081-exec-9] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+14:00:43:237  WARN 32684 --- [http-nio-8081-exec-3] c.h.item.service.impl.ItemServiceImpl    : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@37506d08] Transaction not enabled
+14:00:43:238 DEBUG 32684 --- [http-nio-8081-exec-3] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+14:00:43:239 DEBUG 32684 --- [http-nio-8081-exec-3] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 1861102(Long)
+14:00:44:045  INFO 32684 --- [rpcDispatch_RMROLE_1_6_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:874263700125229101,branchId=874263700125229107,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-item,applicationData=null
+14:00:44:045  INFO 32684 --- [rpcDispatch_RMROLE_1_6_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:874263700125229101 874263700125229107 jdbc:mysql://localhost:3306/hm-item null
+14:00:44:046  INFO 32684 --- [rpcDispatch_RMROLE_1_6_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+14:06:59:438 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+14:06:59:439 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+14:06:59:444 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+14:06:59:446 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+14:06:59:447 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+14:06:59:451 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+14:07:02:175 DEBUG 32684 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+14:07:02:176 DEBUG 32684 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 4026319(Long)
+14:07:02:178 DEBUG 32684 --- [http-nio-8081-exec-1] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+14:07:51:220 DEBUG 32684 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+14:07:51:220 DEBUG 32684 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 4026319(Long)
+14:07:51:222 DEBUG 32684 --- [http-nio-8081-exec-4] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+14:07:51:298  WARN 32684 --- [http-nio-8081-exec-5] c.h.item.service.impl.ItemServiceImpl    : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@744b88b9] Transaction not enabled
+14:07:51:299 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+14:07:51:299 DEBUG 32684 --- [http-nio-8081-exec-5] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 4026319(Long)
+14:07:52:034  INFO 32684 --- [rpcDispatch_RMROLE_1_7_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:874263700125229112,branchId=874263700125229118,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-item,applicationData=null
+14:07:52:034  INFO 32684 --- [rpcDispatch_RMROLE_1_7_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:874263700125229112 874263700125229118 jdbc:mysql://localhost:3306/hm-item null
+14:07:52:034  INFO 32684 --- [rpcDispatch_RMROLE_1_7_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+14:14:05:577 ERROR 32684 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 60017
+14:23:20:298 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.i.m.ItemMapper.selectPage_mpCount    : ==>  Preparing: SELECT COUNT(*) FROM item WHERE (status = ?)
+14:23:20:298 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.i.m.ItemMapper.selectPage_mpCount    : ==> Parameters: 1(Integer)
+14:23:20:304 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.i.m.ItemMapper.selectPage_mpCount    : <==      Total: 1
+14:23:20:307 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.item.mapper.ItemMapper.selectPage    : ==>  Preparing: SELECT id, name, price, stock, image, category, brand, spec, sold, comment_count, isAD, status, create_time, update_time, creater, updater FROM item WHERE (status = ?) ORDER BY update_time DESC LIMIT ?
+14:23:20:308 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.item.mapper.ItemMapper.selectPage    : ==> Parameters: 1(Integer), 20(Long)
+14:23:20:313 DEBUG 32684 --- [http-nio-8081-exec-2] c.h.item.mapper.ItemMapper.selectPage    : <==      Total: 20
+14:23:22:773 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+14:23:22:773 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5089253(Long)
+14:23:22:775 DEBUG 32684 --- [http-nio-8081-exec-6] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+14:23:28:087 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==>  Preparing: SELECT id,name,price,stock,image,category,brand,spec,sold,comment_count,isAD,status,create_time,update_time,creater,updater FROM item WHERE id IN ( ? )
+14:23:28:088 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : ==> Parameters: 5089253(Long)
+14:23:28:090 DEBUG 32684 --- [http-nio-8081-exec-10] c.h.i.mapper.ItemMapper.selectBatchIds   : <==      Total: 1
+14:23:28:170  WARN 32684 --- [http-nio-8081-exec-7] c.h.item.service.impl.ItemServiceImpl    : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d0432f7] Transaction not enabled
+14:23:28:171 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.updateStock   : ==>  Preparing: UPDATE item SET stock = stock - ? WHERE id = ?
+14:23:28:171 DEBUG 32684 --- [http-nio-8081-exec-7] c.h.item.mapper.ItemMapper.updateStock   : ==> Parameters: 1(Integer), 5089253(Long)
+14:23:29:025  INFO 32684 --- [rpcDispatch_RMROLE_1_8_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:874263700125230090,branchId=874263700125230096,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-item,applicationData=null
+14:23:29:026  INFO 32684 --- [rpcDispatch_RMROLE_1_8_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:874263700125230090 874263700125230096 jdbc:mysql://localhost:3306/hm-item null
+14:23:29:026  INFO 32684 --- [rpcDispatch_RMROLE_1_8_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+14:25:05:549 ERROR 32684 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-item?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 60004
