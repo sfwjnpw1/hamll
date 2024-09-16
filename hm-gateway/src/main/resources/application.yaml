@@ -6,6 +6,7 @@ hm:
     alias: hmall # 秘钥别名
     password: hmall123 # 秘钥文件密码
     tokenTTL: 30m # 登录有效期
+  # keytool -genkeypair -alias hmall -keyalg RSA -keypass hmall123 -keystore hmall.jks -storepass hmall123
   auth:
     excludePaths: # 无需登录校验的路径
       - /search/**
