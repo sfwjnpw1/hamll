@@ -44,7 +44,7 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
     private final TradeClient tradeClient;
 
     // 消息队列优化
-    private RabbitTemplate rabbitTemplate;
+    private final RabbitTemplate rabbitTemplate;
 
     @Override
     public String applyPayOrder(PayApplyDTO applyDTO) {
@@ -81,6 +81,7 @@ public class PayOrderServiceImpl extends ServiceImpl<PayOrderMapper, PayOrder> i
         // 使用FeignClient简化
         /*tradeClient.markOrderPaySuccess(po.getBizOrderNo());*/
         // 消息队列优化
+        // 注释以下内容验证延迟消息
         try {
             rabbitTemplate.convertAndSend("pay.topic", "pay.success", po.getBizOrderNo());
         } catch (Exception e) {

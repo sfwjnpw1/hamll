@@ -1,267 +1,265 @@
-00:00:45:007 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119991
-00:03:45:011 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 179991
-00:07:45:004 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 239978
-00:09:45:008 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119990
-00:12:45:005 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 179975
-00:14:45:007 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119987
-00:16:45:005 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119986
-00:18:45:002 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119984
-00:20:45:002 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119983
-00:23:44:999 ERROR 23712 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 179973
-00:24:48:171 DEBUG 23712 --- [http-nio-8083-exec-10] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
-00:24:48:173 DEBUG 23712 --- [http-nio-8083-exec-10] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
-00:24:48:179 DEBUG 23712 --- [http-nio-8083-exec-10] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
-00:25:03:041 DEBUG 23712 --- [http-nio-8083-exec-1] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
-00:25:03:054 DEBUG 23712 --- [http-nio-8083-exec-1] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
-00:25:03:066 DEBUG 23712 --- [http-nio-8083-exec-1] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
-00:25:29:885  INFO 23712 --- [http-nio-8083-exec-2] c.h.user.service.impl.UserServiceImpl    : 开始扣款
-00:25:29:887 DEBUG 23712 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
-00:25:29:892 DEBUG 23712 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 1(Long)
-00:25:29:893 DEBUG 23712 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
-00:25:30:043 DEBUG 23712 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 19400 where id = ?
-00:25:30:045 DEBUG 23712 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 1(Long)
-00:25:30:091 DEBUG 23712 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
-00:25:30:091  INFO 23712 --- [http-nio-8083-exec-2] c.h.user.service.impl.UserServiceImpl    : 扣款成功
-00:25:30:519  INFO 23712 --- [rpcDispatch_RMROLE_1_4_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:9214932350123782361,branchId=9214932350123782363,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-user,applicationData=null
-00:25:30:519  INFO 23712 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:9214932350123782361 9214932350123782363 jdbc:mysql://localhost:3306/hm-user null
-00:25:30:523  INFO 23712 --- [rpcDispatch_RMROLE_1_4_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
-00:29:46:964  WARN 23712 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:29:46:964  WARN 23712 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:29:46:965  WARN 23712 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:29:46:973  WARN 23712 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:29:48:952  INFO 23712 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-00:29:48:959  INFO 23712 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-00:29:49:302  INFO 23712 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
-00:29:49:303  INFO 23712 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@4177d25a[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-00:29:49:303  INFO 23712 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1727099758875_127.0.0.1_51074
-00:29:49:320  INFO 23712 --- [nacos-grpc-client-executor-1870] c.a.n.c.remote.client.grpc.GrpcClient    : [1727099758875_127.0.0.1_51074]Ignore complete event,isRunning:false,isAbandon=false
-00:29:49:321  INFO 23712 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@4d2e0cd6[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 1871]
-00:29:49:410  INFO 23712 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-00:29:49:430  INFO 23712 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-13:23:36:346  INFO 37620 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
-13:23:38:873  INFO 37620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-13:23:38:879  INFO 37620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-13:23:38:946  INFO 37620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
-13:23:39:734  INFO 37620 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b4da8851-3f1a-3407-92e1-d3b7fae251df
-13:23:39:901  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:39:902  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:39:902  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:39:969  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:39:976  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:39:978  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:39:980  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$590/0x0000000800682840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:39:981  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:39:993  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:40:002  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:40:011  INFO 37620 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
-13:23:40:148  INFO 37620 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
-13:23:40:160  INFO 37620 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
-13:23:40:404  INFO 37620 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
-13:23:40:723  INFO 37620 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
-13:23:41:028  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 73306f71-2886-4890-b017-692c82b042f6
-13:23:41:029  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] RpcClient init label, labels = {module=naming, source=sdk}
-13:23:41:033  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-13:23:41:033  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-13:23:41:034  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-13:23:41:035  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
-13:23:41:175  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Success to connect to server [localhost:8848] on start up, connectionId = 1727155421049_127.0.0.1_12635
-13:23:41:175  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-13:23:41:175  INFO 37620 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Notify connected event to listeners.
-13:23:41:176  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800560040
-13:23:41:246  INFO 37620 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
-13:23:41:824  INFO 37620 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Receive server push request, request = NotifySubscriberRequest, requestId = 210
-13:23:41:825  INFO 37620 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [73306f71-2886-4890-b017-692c82b042f6] Ack server push request, request = NotifySubscriberRequest, requestId = 210
-13:23:43:240  INFO 37620 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:26.10.64.202:8099,msg:< RegisterTMRequest{applicationId='user-service', transactionServiceGroup='hmall'} >
-13:23:45:785  INFO 37620 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:2.0.0,channel:[id: 0xe0b77b02, L:/26.10.64.202:12647 - R:/26.10.64.202:8099]
-13:23:45:800  INFO 37620 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 208 ms, version:2.0.0,role:TMROLE,channel:[id: 0xe0b77b02, L:/26.10.64.202:12647 - R:/26.10.64.202:8099]
-13:23:45:802  INFO 37620 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[user-service] txServiceGroup[hmall]
-13:23:45:830  INFO 37620 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
-13:23:45:833  INFO 37620 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
-13:23:45:852  INFO 37620 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
-13:23:45:853  INFO 37620 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[user-service] txServiceGroup[hmall]
-13:23:45:853  INFO 37620 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
-13:23:45:857  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:46:050  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:46:055  INFO 37620 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:23:47:048  INFO 37620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-13:23:47:052  INFO 37620 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
-13:23:47:052  INFO 37620 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-13:23:47:054  INFO 37620 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-13:23:47:078  INFO 37620 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
-13:23:47:109  INFO 37620 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-13:23:47:109  INFO 37620 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-13:23:47:666  INFO 37620 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-13:23:47:666  INFO 37620 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11287 ms
-13:23:48:178  INFO 37620 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-13:23:48:421  INFO 37620 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-13:23:49:861  INFO 37620 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
-13:23:49:862  INFO 37620 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://localhost:3306/hm-user
-13:23:49:863  INFO 37620 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:26.10.64.202:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/hm-user', applicationId='user-service', transactionServiceGroup='hmall'} >
-13:23:49:879  INFO 37620 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x911da91e, L:/26.10.64.202:12695 - R:/26.10.64.202:8099]
-13:23:49:879  INFO 37620 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 12 ms, version:2.0.0,role:RMROLE,channel:[id: 0x911da91e, L:/26.10.64.202:12695 - R:/26.10.64.202:8099]
-13:24:02:279  INFO 37620 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13:24:02:426  INFO 37620 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-13:24:09:056  INFO 37620 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13:24:09:677  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of d0710942-5221-4bf5-ba7f-f14c85619044
-13:24:09:678  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] RpcClient init label, labels = {module=naming, source=sdk}
-13:24:09:678  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-13:24:09:680  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-13:24:09:681  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-13:24:09:682  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
-13:24:09:845  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Success to connect to server [localhost:8848] on start up, connectionId = 1727155449699_127.0.0.1_12750
-13:24:09:845  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-13:24:09:845  INFO 37620 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Notify connected event to listeners.
-13:24:09:845  INFO 37620 --- [main] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800560040
-13:24:09:957  INFO 37620 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-13:24:09:973  INFO 37620 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 26.10.64.202:8083 register finished
-13:24:10:427  INFO 37620 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Receive server push request, request = NotifySubscriberRequest, requestId = 213
-13:24:10:439  INFO 37620 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [d0710942-5221-4bf5-ba7f-f14c85619044] Ack server push request, request = NotifySubscriberRequest, requestId = 213
-13:24:13:287  INFO 37620 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13:24:13:288  INFO 37620 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-13:24:13:297  INFO 37620 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-13:24:13:365  INFO 37620 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-13:24:13:650  INFO 37620 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 56.344 seconds (JVM running for 61.558)
-13:24:13:663  INFO 37620 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
-13:24:13:664  INFO 37620 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service-dev.yaml, group=DEFAULT_GROUP
-13:24:13:665  INFO 37620 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service, group=DEFAULT_GROUP
-13:25:49:902 ERROR 37620 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 120179
-13:27:49:892 ERROR 37620 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119971
-13:29:49:893 ERROR 37620 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119984
-13:31:49:894 ERROR 37620 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119972
-13:32:38:380  WARN 37620 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-13:32:38:380  WARN 37620 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-13:32:38:381  WARN 37620 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-13:32:38:385  WARN 37620 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-13:32:40:310  INFO 37620 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-13:32:40:319  INFO 37620 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-13:32:40:653  INFO 37620 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
-13:32:40:653  INFO 37620 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2ac56237[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-13:32:40:654  INFO 37620 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1727155449699_127.0.0.1_12750
-13:32:40:655  INFO 37620 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@e67cad7[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 112]
-13:32:40:666  INFO 37620 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-13:32:40:673  INFO 37620 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
-13:32:40:680  INFO 37620 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x911da91e, L:/26.10.64.202:12695 ! R:/26.10.64.202:8099]
-13:32:40:681  INFO 37620 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x911da91e, L:/26.10.64.202:12695 ! R:/26.10.64.202:8099]
-13:32:40:681  INFO 37620 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x911da91e, L:/26.10.64.202:12695 ! R:/26.10.64.202:8099]
-13:32:40:683  INFO 37620 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x911da91e, L:/26.10.64.202:12695 ! R:/26.10.64.202:8099]
-13:32:40:684  INFO 37620 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x911da91e, L:/26.10.64.202:12695 ! R:/26.10.64.202:8099]) will closed
-13:32:40:684  INFO 37620 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x911da91e, L:/26.10.64.202:12695 ! R:/26.10.64.202:8099]) will closed
-13:34:30:121  INFO 33112 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
-13:34:31:925  INFO 33112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-13:34:31:928  INFO 33112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-13:34:31:966  INFO 33112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-13:34:32:358  INFO 33112 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b4da8851-3f1a-3407-92e1-d3b7fae251df
-13:34:32:459  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:460  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:461  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:549  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:557  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:569  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:571  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$590/0x0000000800685840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:572  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:587  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:608  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:32:614  INFO 33112 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
-13:34:32:765  INFO 33112 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
-13:34:32:773  INFO 33112 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
-13:34:32:921  INFO 33112 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
-13:34:33:070  INFO 33112 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
-13:34:33:326  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of c5285b97-a127-4892-95c6-9b06359146d4
-13:34:33:327  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] RpcClient init label, labels = {module=naming, source=sdk}
-13:34:33:330  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-13:34:33:331  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-13:34:33:331  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-13:34:33:332  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
-13:34:33:483  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Success to connect to server [localhost:8848] on start up, connectionId = 1727156073363_127.0.0.1_13978
-13:34:33:483  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-13:34:33:483  INFO 33112 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Notify connected event to listeners.
-13:34:33:484  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800558040
-13:34:33:554  INFO 33112 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
-13:34:34:053  INFO 33112 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Receive server push request, request = NotifySubscriberRequest, requestId = 226
-13:34:34:055  INFO 33112 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [c5285b97-a127-4892-95c6-9b06359146d4] Ack server push request, request = NotifySubscriberRequest, requestId = 226
-13:34:34:927  INFO 33112 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:26.10.64.202:8099,msg:< RegisterTMRequest{applicationId='user-service', transactionServiceGroup='hmall'} >
-13:34:36:178  INFO 33112 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x83d03292, L:/26.10.64.202:13981 - R:/26.10.64.202:8099]
-13:34:36:189  INFO 33112 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 76 ms, version:2.0.0,role:TMROLE,channel:[id: 0x83d03292, L:/26.10.64.202:13981 - R:/26.10.64.202:8099]
-13:34:36:190  INFO 33112 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[user-service] txServiceGroup[hmall]
-13:34:36:202  INFO 33112 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
-13:34:36:202  INFO 33112 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
-13:34:36:211  INFO 33112 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
-13:34:36:211  INFO 33112 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[user-service] txServiceGroup[hmall]
-13:34:36:212  INFO 33112 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
-13:34:36:214  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:36:317  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:36:321  INFO 33112 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-13:34:36:770  INFO 33112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
-13:34:36:772  INFO 33112 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
-13:34:36:773  INFO 33112 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-13:34:36:773  INFO 33112 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-13:34:36:791  INFO 33112 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
-13:34:36:821  INFO 33112 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-13:34:36:822  INFO 33112 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
-13:34:37:091  INFO 33112 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-13:34:37:091  INFO 33112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6926 ms
-13:34:37:328  INFO 33112 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
-13:34:37:470  INFO 33112 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
-13:34:38:095  INFO 33112 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
-13:34:38:095  INFO 33112 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://localhost:3306/hm-user
-13:34:38:096  INFO 33112 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:26.10.64.202:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/hm-user', applicationId='user-service', transactionServiceGroup='hmall'} >
-13:34:38:108  INFO 33112 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x5cf34dd1, L:/26.10.64.202:13988 - R:/26.10.64.202:8099]
-13:34:38:108  INFO 33112 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 9 ms, version:2.0.0,role:RMROLE,channel:[id: 0x5cf34dd1, L:/26.10.64.202:13988 - R:/26.10.64.202:8099]
-13:34:45:169  INFO 33112 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13:34:45:268  INFO 33112 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
-13:34:49:094  INFO 33112 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13:34:49:293  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of ca28cdbf-ea63-4d85-b0ce-8c4013dacad4
-13:34:49:293  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] RpcClient init label, labels = {module=naming, source=sdk}
-13:34:49:294  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
-13:34:49:294  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
-13:34:49:294  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
-13:34:49:294  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
-13:34:49:415  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Success to connect to server [localhost:8848] on start up, connectionId = 1727156089303_127.0.0.1_14006
-13:34:49:415  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
-13:34:49:415  INFO 33112 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Notify connected event to listeners.
-13:34:49:415  INFO 33112 --- [main] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800558040
-13:34:49:437  INFO 33112 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
-13:34:49:453  INFO 33112 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 26.10.64.202:8083 register finished
-13:34:49:942  INFO 33112 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Receive server push request, request = NotifySubscriberRequest, requestId = 228
-13:34:49:945  INFO 33112 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [ca28cdbf-ea63-4d85-b0ce-8c4013dacad4] Ack server push request, request = NotifySubscriberRequest, requestId = 228
-13:34:51:414  INFO 33112 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13:34:51:415  INFO 33112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
-13:34:51:418  INFO 33112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-13:34:51:445  INFO 33112 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-13:34:51:575  INFO 33112 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 35.286 seconds (JVM running for 38.838)
-13:34:51:583  INFO 33112 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
-13:34:51:584  INFO 33112 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service-dev.yaml, group=DEFAULT_GROUP
-13:34:51:585  INFO 33112 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service, group=DEFAULT_GROUP
-13:35:50:463  INFO 33112 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-13:35:50:464  INFO 33112 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-13:35:50:469  INFO 33112 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-13:35:50:764 DEBUG 33112 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
-13:35:50:834 DEBUG 33112 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
-13:35:50:940 DEBUG 33112 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
-13:36:06:312 DEBUG 33112 --- [http-nio-8083-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
-13:36:06:313 DEBUG 33112 --- [http-nio-8083-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
-13:36:06:320 DEBUG 33112 --- [http-nio-8083-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
-13:36:34:565  INFO 33112 --- [http-nio-8083-exec-3] c.h.user.service.impl.UserServiceImpl    : 开始扣款
-13:36:34:573 DEBUG 33112 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
-13:36:34:678 DEBUG 33112 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 1(Long)
-13:36:34:682 DEBUG 33112 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
-13:36:34:820 DEBUG 33112 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 19400 where id = ?
-13:36:34:851 DEBUG 33112 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 1(Long)
-13:36:35:123 DEBUG 33112 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
-13:36:35:123  INFO 33112 --- [http-nio-8083-exec-3] c.h.user.service.impl.UserServiceImpl    : 扣款成功
-13:36:36:028  INFO 33112 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:9214932350123782388,branchId=9214932350123782391,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-user,applicationData=null
-13:36:36:032  INFO 33112 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:9214932350123782388 9214932350123782391 jdbc:mysql://localhost:3306/hm-user null
-13:36:36:033  INFO 33112 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
-13:49:04:397  WARN 33112 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-13:49:04:397  WARN 33112 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-13:49:04:399  WARN 33112 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-13:49:04:399  WARN 33112 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-13:49:05:987  INFO 33112 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-13:49:05:995  INFO 33112 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-13:49:06:361  INFO 33112 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
-13:49:06:363  INFO 33112 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@225d6bc0[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-13:49:06:364  INFO 33112 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1727156089303_127.0.0.1_14006
-13:49:06:372  INFO 33112 --- [nacos-grpc-client-executor-184] c.a.n.c.remote.client.grpc.GrpcClient    : [1727156089303_127.0.0.1_14006]Ignore complete event,isRunning:false,isAbandon=false
-13:49:06:386  INFO 33112 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@75d41202[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 185]
-13:49:06:407  INFO 33112 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-13:49:06:423  INFO 33112 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+00:15:11:380  INFO 17172 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+00:15:13:506  INFO 17172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+00:15:13:510  INFO 17172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+00:15:13:547  INFO 17172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+00:15:14:029  INFO 17172 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b4da8851-3f1a-3407-92e1-d3b7fae251df
+00:15:14:132  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:133  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:133  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:180  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:186  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:189  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:189  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$590/0x0000000800685040] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:191  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:196  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:203  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:14:209  INFO 17172 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+00:15:14:286  INFO 17172 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+00:15:14:291  INFO 17172 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+00:15:14:369  INFO 17172 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+00:15:14:455  INFO 17172 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+00:15:14:650  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 0a641493-190b-438b-806d-2ba9c770eec3
+00:15:14:650  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] RpcClient init label, labels = {module=naming, source=sdk}
+00:15:14:652  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+00:15:14:654  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+00:15:14:654  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+00:15:14:654  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+00:15:14:792  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Success to connect to server [localhost:8848] on start up, connectionId = 1728058514664_127.0.0.1_4046
+00:15:14:792  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+00:15:14:792  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800558040
+00:15:14:792  INFO 17172 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Notify connected event to listeners.
+00:15:14:881  INFO 17172 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
+00:15:15:369  INFO 17172 --- [nacos-grpc-client-executor-4] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Receive server push request, request = NotifySubscriberRequest, requestId = 14
+00:15:15:370  INFO 17172 --- [nacos-grpc-client-executor-4] com.alibaba.nacos.common.remote.client   : [0a641493-190b-438b-806d-2ba9c770eec3] Ack server push request, request = NotifySubscriberRequest, requestId = 14
+00:15:15:614  INFO 17172 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:26.10.64.202:8099,msg:< RegisterTMRequest{applicationId='user-service', transactionServiceGroup='hmall'} >
+00:15:16:637  INFO 17172 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:2.0.0,channel:[id: 0xf128e28b, L:/26.10.64.202:4049 - R:/26.10.64.202:8099]
+00:15:16:645  INFO 17172 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 93 ms, version:2.0.0,role:TMROLE,channel:[id: 0xf128e28b, L:/26.10.64.202:4049 - R:/26.10.64.202:8099]
+00:15:16:646  INFO 17172 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[user-service] txServiceGroup[hmall]
+00:15:16:658  INFO 17172 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+00:15:16:659  INFO 17172 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+00:15:16:671  INFO 17172 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+00:15:16:671  INFO 17172 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[user-service] txServiceGroup[hmall]
+00:15:16:671  INFO 17172 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+00:15:16:675  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:16:773  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:16:776  INFO 17172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:15:17:353  INFO 17172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+00:15:17:355  INFO 17172 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+00:15:17:355  INFO 17172 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+00:15:17:355  INFO 17172 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+00:15:17:364  INFO 17172 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+00:15:17:381  INFO 17172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+00:15:17:381  INFO 17172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+00:15:17:693  INFO 17172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+00:15:17:693  INFO 17172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6283 ms
+00:15:17:954  INFO 17172 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+00:15:18:087  INFO 17172 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+00:15:18:716  INFO 17172 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
+00:15:18:716  INFO 17172 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://localhost:3306/hm-user
+00:15:18:717  INFO 17172 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:26.10.64.202:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/hm-user', applicationId='user-service', transactionServiceGroup='hmall'} >
+00:15:18:728  INFO 17172 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x7ae3fbd2, L:/26.10.64.202:4055 - R:/26.10.64.202:8099]
+00:15:18:728  INFO 17172 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 9 ms, version:2.0.0,role:RMROLE,channel:[id: 0x7ae3fbd2, L:/26.10.64.202:4055 - R:/26.10.64.202:8099]
+00:15:24:785  INFO 17172 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:15:24:849  INFO 17172 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+00:15:27:882  INFO 17172 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:15:28:184  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of e3912be9-e5a8-46c7-82b9-748ed025d0b4
+00:15:28:184  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] RpcClient init label, labels = {module=naming, source=sdk}
+00:15:28:185  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+00:15:28:185  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+00:15:28:185  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+00:15:28:185  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+00:15:28:315  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Success to connect to server [localhost:8848] on start up, connectionId = 1728058528196_127.0.0.1_4096
+00:15:28:316  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+00:15:28:316  INFO 17172 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Notify connected event to listeners.
+00:15:28:316  INFO 17172 --- [main] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800558040
+00:15:28:344  INFO 17172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+00:15:28:359  INFO 17172 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 26.10.64.202:8083 register finished
+00:15:28:908  INFO 17172 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Receive server push request, request = NotifySubscriberRequest, requestId = 16
+00:15:28:913  INFO 17172 --- [nacos-grpc-client-executor-7] com.alibaba.nacos.common.remote.client   : [e3912be9-e5a8-46c7-82b9-748ed025d0b4] Ack server push request, request = NotifySubscriberRequest, requestId = 16
+00:15:30:480  INFO 17172 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+00:15:30:481  INFO 17172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+00:15:30:487  INFO 17172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+00:15:30:548  INFO 17172 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+00:15:30:684  INFO 17172 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 34.16 seconds (JVM running for 36.718)
+00:15:30:693  INFO 17172 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
+00:15:30:694  INFO 17172 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service-dev.yaml, group=DEFAULT_GROUP
+00:15:30:694  INFO 17172 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service, group=DEFAULT_GROUP
+00:16:47:099  INFO 17172 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:16:47:099  INFO 17172 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+00:16:47:103  INFO 17172 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+00:16:47:624 DEBUG 17172 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+00:16:47:688 DEBUG 17172 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+00:16:47:836 DEBUG 17172 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+00:16:49:949 DEBUG 17172 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+00:16:49:949 DEBUG 17172 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+00:16:49:952 DEBUG 17172 --- [http-nio-8083-exec-2] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+00:17:59:625 DEBUG 17172 --- [http-nio-8083-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+00:17:59:625 DEBUG 17172 --- [http-nio-8083-exec-4] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+00:17:59:633 DEBUG 17172 --- [http-nio-8083-exec-4] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+00:18:11:455  INFO 17172 --- [http-nio-8083-exec-5] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+00:18:11:462 DEBUG 17172 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+00:18:11:554 DEBUG 17172 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 1(Long)
+00:18:11:559 DEBUG 17172 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+00:18:11:684 DEBUG 17172 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 13700 where id = ?
+00:18:11:705 DEBUG 17172 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 1(Long)
+00:18:12:000 DEBUG 17172 --- [http-nio-8083-exec-5] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+00:18:12:000  INFO 17172 --- [http-nio-8083-exec-5] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+00:18:12:936  INFO 17172 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:3918699914192576534,branchId=3918699914192576536,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-user,applicationData=null
+00:18:12:940  INFO 17172 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:3918699914192576534 3918699914192576536 jdbc:mysql://localhost:3306/hm-user null
+00:18:12:942  INFO 17172 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+00:21:18:752 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 60006
+00:35:18:737 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 179983
+00:38:18:748 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 179985
+00:41:18:734 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 179922
+00:43:18:741 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119986
+00:47:18:751 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 239987
+00:50:18:747 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 179940
+00:52:18:746 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119974
+00:54:18:751 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119949
+00:56:18:745 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119879
+00:58:18:741 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119938
+01:00:18:746 ERROR 17172 --- [tableMetaChecker_1_1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://localhost:3306/hm-user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 119983
+01:03:42:282  WARN 17172 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+01:03:42:283  WARN 17172 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+01:03:42:285  WARN 17172 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+01:03:42:290  WARN 17172 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+01:03:43:712  INFO 17172 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+01:03:43:721  INFO 17172 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+01:03:44:055  INFO 17172 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+01:03:44:055  INFO 17172 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@5716d6d7[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+01:03:44:056  INFO 17172 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1728058528196_127.0.0.1_4096
+01:03:44:061  INFO 17172 --- [nacos-grpc-client-executor-591] c.a.n.c.remote.client.grpc.GrpcClient    : [1728058528196_127.0.0.1_4096]Ignore complete event,isRunning:false,isAbandon=false
+01:03:44:076  INFO 17172 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@b5e5dd[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 592]
+01:03:44:109  INFO 17172 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+01:03:44:121  INFO 17172 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+01:03:44:128  INFO 17172 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x7ae3fbd2, L:/26.10.64.202:4055 ! R:/26.10.64.202:8099]
+01:03:44:129  INFO 17172 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x7ae3fbd2, L:/26.10.64.202:4055 ! R:/26.10.64.202:8099]
+01:03:44:131  INFO 17172 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x7ae3fbd2, L:/26.10.64.202:4055 ! R:/26.10.64.202:8099]
+01:03:44:132  INFO 17172 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x7ae3fbd2, L:/26.10.64.202:4055 ! R:/26.10.64.202:8099]
+01:03:44:133  INFO 17172 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x7ae3fbd2, L:/26.10.64.202:4055 ! R:/26.10.64.202:8099]) will closed
+01:03:44:133  INFO 17172 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x7ae3fbd2, L:/26.10.64.202:4055 ! R:/26.10.64.202:8099]) will closed
+01:05:20:446  INFO 18408 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "dev"
+01:05:22:088  INFO 18408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+01:05:22:091  INFO 18408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+01:05:22:127  INFO 18408 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+01:05:22:523  INFO 18408 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b4da8851-3f1a-3407-92e1-d3b7fae251df
+01:05:22:702  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:702  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:704  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:764  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:769  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:771  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:771  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$590/0x0000000800685840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:773  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:778  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:784  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:22:789  INFO 18408 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+01:05:22:897  INFO 18408 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+01:05:22:904  INFO 18408 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+01:05:23:023  INFO 18408 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+01:05:23:136  INFO 18408 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+01:05:23:339  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of f0d3366f-82ba-4a1a-80b2-c6cc04327c0f
+01:05:23:340  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] RpcClient init label, labels = {module=naming, source=sdk}
+01:05:23:343  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+01:05:23:343  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+01:05:23:344  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+01:05:23:344  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+01:05:23:492  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Success to connect to server [localhost:8848] on start up, connectionId = 1728061523368_127.0.0.1_9365
+01:05:23:492  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+01:05:23:492  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800558040
+01:05:23:492  INFO 18408 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Notify connected event to listeners.
+01:05:23:549  INFO 18408 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
+01:05:24:026  INFO 18408 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Receive server push request, request = NotifySubscriberRequest, requestId = 41
+01:05:24:027  INFO 18408 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [f0d3366f-82ba-4a1a-80b2-c6cc04327c0f] Ack server push request, request = NotifySubscriberRequest, requestId = 41
+01:05:24:389  INFO 18408 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:26.10.64.202:8099,msg:< RegisterTMRequest{applicationId='user-service', transactionServiceGroup='hmall'} >
+01:05:25:470  INFO 18408 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:2.0.0,channel:[id: 0xb56999fd, L:/26.10.64.202:9368 - R:/26.10.64.202:8099]
+01:05:25:480  INFO 18408 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 87 ms, version:2.0.0,role:TMROLE,channel:[id: 0xb56999fd, L:/26.10.64.202:9368 - R:/26.10.64.202:8099]
+01:05:25:481  INFO 18408 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[user-service] txServiceGroup[hmall]
+01:05:25:495  INFO 18408 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+01:05:25:495  INFO 18408 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+01:05:25:507  INFO 18408 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+01:05:25:507  INFO 18408 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[user-service] txServiceGroup[hmall]
+01:05:25:507  INFO 18408 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+01:05:25:510  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:25:633  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:25:636  INFO 18408 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+01:05:26:089  INFO 18408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+01:05:26:091  INFO 18408 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+01:05:26:091  INFO 18408 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+01:05:26:091  INFO 18408 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+01:05:26:100  INFO 18408 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+01:05:26:115  INFO 18408 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+01:05:26:116  INFO 18408 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+01:05:26:554  INFO 18408 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+01:05:26:554  INFO 18408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6069 ms
+01:05:26:819  INFO 18408 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+01:05:26:971  INFO 18408 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+01:05:27:556  INFO 18408 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 26.10.64.202:8099
+01:05:27:556  INFO 18408 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://localhost:3306/hm-user
+01:05:27:557  INFO 18408 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:26.10.64.202:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/hm-user', applicationId='user-service', transactionServiceGroup='hmall'} >
+01:05:27:575  INFO 18408 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:2.0.0,channel:[id: 0x93ce9da4, L:/26.10.64.202:9376 - R:/26.10.64.202:8099]
+01:05:27:576  INFO 18408 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 12 ms, version:2.0.0,role:RMROLE,channel:[id: 0x93ce9da4, L:/26.10.64.202:9376 - R:/26.10.64.202:8099]
+01:05:37:082  INFO 18408 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+01:05:37:143  INFO 18408 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+01:05:39:835  INFO 18408 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+01:05:40:049  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of fcca23c3-55cf-4851-be9f-44eece50c9e8
+01:05:40:049  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] RpcClient init label, labels = {module=naming, source=sdk}
+01:05:40:050  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+01:05:40:051  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+01:05:40:051  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+01:05:40:051  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+01:05:40:178  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Success to connect to server [localhost:8848] on start up, connectionId = 1728061540063_127.0.0.1_9409
+01:05:40:178  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+01:05:40:178  INFO 18408 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Notify connected event to listeners.
+01:05:40:178  INFO 18408 --- [main] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800558040
+01:05:40:203  INFO 18408 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+01:05:40:212  INFO 18408 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 26.10.64.202:8083 register finished
+01:05:40:792  INFO 18408 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Receive server push request, request = NotifySubscriberRequest, requestId = 43
+01:05:40:796  INFO 18408 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [fcca23c3-55cf-4851-be9f-44eece50c9e8] Ack server push request, request = NotifySubscriberRequest, requestId = 43
+01:05:42:060  INFO 18408 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+01:05:42:062  INFO 18408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+01:05:42:072  INFO 18408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+01:05:42:118  INFO 18408 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+01:05:42:245  INFO 18408 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 35.03 seconds (JVM running for 38.513)
+01:05:42:253  INFO 18408 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service.yaml, group=DEFAULT_GROUP
+01:05:42:254  INFO 18408 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service-dev.yaml, group=DEFAULT_GROUP
+01:05:42:255  INFO 18408 --- [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=user-service, group=DEFAULT_GROUP
+01:05:59:266  INFO 18408 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+01:05:59:266  INFO 18408 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+01:05:59:267  INFO 18408 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+01:05:59:610 DEBUG 18408 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+01:05:59:643 DEBUG 18408 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+01:05:59:695 DEBUG 18408 --- [http-nio-8083-exec-1] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+01:06:23:544 DEBUG 18408 --- [http-nio-8083-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==>  Preparing: SELECT id,user_id,province,city,town,mobile,street,contact,is_default,notes FROM address WHERE (user_id = ?)
+01:06:23:545 DEBUG 18408 --- [http-nio-8083-exec-2] c.h.u.mapper.AddressMapper.selectList    : ==> Parameters: 1(Long)
+01:06:23:552 DEBUG 18408 --- [http-nio-8083-exec-2] c.h.u.mapper.AddressMapper.selectList    : <==      Total: 4
+01:06:31:969  INFO 18408 --- [http-nio-8083-exec-3] c.h.user.service.impl.UserServiceImpl    : 开始扣款
+01:06:31:980 DEBUG 18408 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectById    : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE id=?
+01:06:32:080 DEBUG 18408 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectById    : ==> Parameters: 1(Long)
+01:06:32:084 DEBUG 18408 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.selectById    : <==      Total: 1
+01:06:32:224 DEBUG 18408 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.updateMoney   : ==>  Preparing: update user set balance = balance - 9700 where id = ?
+01:06:32:251 DEBUG 18408 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.updateMoney   : ==> Parameters: 1(Long)
+01:06:32:491 DEBUG 18408 --- [http-nio-8083-exec-3] c.h.user.mapper.UserMapper.updateMoney   : <==    Updates: 1
+01:06:32:492  INFO 18408 --- [http-nio-8083-exec-3] c.h.user.service.impl.UserServiceImpl    : 扣款成功
+01:06:33:947  INFO 18408 --- [rpcDispatch_RMROLE_1_1_16] i.s.c.r.p.c.RmBranchCommitProcessor      : rm client handle branch commit process:xid=26.10.64.202:8099:3918699914192576552,branchId=3918699914192576555,branchType=AT,resourceId=jdbc:mysql://localhost:3306/hm-user,applicationData=null
+01:06:33:949  INFO 18408 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch committing: 26.10.64.202:8099:3918699914192576552 3918699914192576555 jdbc:mysql://localhost:3306/hm-user null
+01:06:33:951  INFO 18408 --- [rpcDispatch_RMROLE_1_1_16] io.seata.rm.AbstractRMHandler            : Branch commit result: PhaseTwo_Committed
+01:08:49:712  WARN 18408 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+01:08:49:712  WARN 18408 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+01:08:49:712  WARN 18408 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+01:08:49:714  WARN 18408 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+01:08:50:579  INFO 18408 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+01:08:50:588  INFO 18408 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+01:08:50:926  INFO 18408 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+01:08:50:927  INFO 18408 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@4f8a2cae[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+01:08:50:927  INFO 18408 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1728061540063_127.0.0.1_9409
+01:08:50:928  INFO 18408 --- [nacos-grpc-client-executor-49] c.a.n.c.remote.client.grpc.GrpcClient    : [1728061540063_127.0.0.1_9409]Ignore complete event,isRunning:false,isAbandon=false
+01:08:50:934  INFO 18408 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@50a5683b[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 50]
+01:08:50:940  INFO 18408 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+01:08:50:946  INFO 18408 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+01:08:50:951  INFO 18408 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x93ce9da4, L:/26.10.64.202:9376 ! R:/26.10.64.202:8099]
+01:08:50:951  INFO 18408 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x93ce9da4, L:/26.10.64.202:9376 ! R:/26.10.64.202:8099]
+01:08:50:951  INFO 18408 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x93ce9da4, L:/26.10.64.202:9376 ! R:/26.10.64.202:8099]
+01:08:50:953  INFO 18408 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x93ce9da4, L:/26.10.64.202:9376 ! R:/26.10.64.202:8099]
+01:08:50:953  INFO 18408 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x93ce9da4, L:/26.10.64.202:9376 ! R:/26.10.64.202:8099]) will closed
+01:08:50:954  INFO 18408 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x93ce9da4, L:/26.10.64.202:9376 ! R:/26.10.64.202:8099]) will closed
