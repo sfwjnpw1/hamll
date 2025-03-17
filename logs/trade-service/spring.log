@@ -1,19 +1,434 @@
-00:06:53:231  WARN 18692 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:06:53:231  WARN 18692 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:06:53:307  WARN 18692 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:06:53:332  WARN 18692 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:06:53:640  INFO 18692 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
-00:06:53:658  INFO 18692 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
-00:06:53:686  INFO 18692 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
-00:06:53:993  INFO 18692 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
-00:06:55:186  INFO 18692 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-00:06:55:196  INFO 18692 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-00:06:55:536  INFO 18692 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
-00:06:55:537  INFO 18692 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@f3ae509[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
-00:06:55:537  INFO 18692 --- [SpringContextShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1728832223105_127.0.0.1_65396
-00:06:55:544  INFO 18692 --- [nacos-grpc-client-executor-2243] c.a.n.c.remote.client.grpc.GrpcClient    : [1728832223105_127.0.0.1_65396]Ignore complete event,isRunning:false,isAbandon=false
-00:06:55:551  INFO 18692 --- [SpringContextShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@539474bb[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 2244]
-00:06:55:583  INFO 18692 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-00:06:55:633  INFO 18692 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-00:06:55:634  INFO 18692 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
-00:06:55:634  INFO 18692 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+17:43:25:966  INFO 2828 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+17:43:30:093  INFO 2828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+17:43:30:101  INFO 2828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:43:30:202  INFO 2828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+17:43:31:999  INFO 2828 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a7afa1e5-2633-3ba3-abf6-36f0f1dba440
+17:43:32:483  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataCoreAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:485  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springApplicationContextProvider' of type [io.seata.spring.boot.autoconfigure.provider.SpringApplicationContextProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:486  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:633  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'failureHandler' of type [io.seata.tm.api.DefaultFailureHandlerImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:644  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:649  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:651  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$592/0x0000000800692840] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:653  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:671  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'springCloudAlibabaConfiguration' of type [io.seata.spring.boot.autoconfigure.properties.SpringCloudAlibabaConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:684  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataProperties' of type [io.seata.spring.boot.autoconfigure.properties.SeataProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:32:696  INFO 2828 --- [main] i.s.s.b.a.SeataAutoConfiguration         : Automatically configure Seata
+17:43:33:054  INFO 2828 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+17:43:33:079  INFO 2828 --- [main] io.seata.config.ConfigurationFactory     : load Configuration from :Spring Configuration
+17:43:33:401  INFO 2828 --- [main] i.s.s.a.GlobalTransactionScanner         : Initializing Global Transaction Clients ... 
+17:43:33:639  INFO 2828 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+17:43:34:154  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 86b095dc-8adf-4136-832c-46653b1bcd95
+17:43:34:154  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] RpcClient init label, labels = {module=naming, source=sdk}
+17:43:34:159  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:43:34:160  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:43:34:161  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:43:34:163  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+17:43:34:328  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Success to connect to server [localhost:8848] on start up, connectionId = 1741945414189_172.17.0.1_53454
+17:43:34:328  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:43:34:328  INFO 2828 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Notify connected event to listeners.
+17:43:34:328  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800560040
+17:43:34:471  INFO 2828 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.61.191:8099
+17:43:34:952  INFO 2828 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Receive server push request, request = NotifySubscriberRequest, requestId = 30
+17:43:34:981  INFO 2828 --- [nacos-grpc-client-executor-5] com.alibaba.nacos.common.remote.client   : [86b095dc-8adf-4136-832c-46653b1bcd95] Ack server push request, request = NotifySubscriberRequest, requestId = 30
+17:43:35:400  INFO 2828 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:TMROLE,address:192.168.61.191:8099,msg:< RegisterTMRequest{applicationId='trade-service', transactionServiceGroup='hmall'} >
+17:43:36:763  INFO 2828 --- [main] i.s.c.rpc.netty.TmNettyRemotingClient    : register TM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x1a8aa758, L:/192.168.61.191:58478 - R:/192.168.61.191:8099]
+17:43:36:780  INFO 2828 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 206 ms, version:1.5.2,role:TMROLE,channel:[id: 0x1a8aa758, L:/192.168.61.191:58478 - R:/192.168.61.191:8099]
+17:43:36:782  INFO 2828 --- [main] i.s.s.a.GlobalTransactionScanner         : Transaction Manager Client is initialized. applicationId[trade-service] txServiceGroup[hmall]
+17:43:36:813  INFO 2828 --- [main] io.seata.rm.datasource.AsyncWorker       : Async Commit Buffer Limit: 10000
+17:43:36:815  INFO 2828 --- [main] i.s.rm.datasource.xa.ResourceManagerXA   : ResourceManagerXA init ...
+17:43:36:838  INFO 2828 --- [main] i.s.core.rpc.netty.NettyClientBootstrap  : NettyClientBootstrap has started
+17:43:36:838  INFO 2828 --- [main] i.s.s.a.GlobalTransactionScanner         : Resource Manager is initialized. applicationId[trade-service] txServiceGroup[hmall]
+17:43:36:839  INFO 2828 --- [main] i.s.s.a.GlobalTransactionScanner         : Global Transaction Clients are initialized. 
+17:43:36:848  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration' of type [io.seata.spring.boot.autoconfigure.SeataDataSourceAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:37:315  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [com.alibaba.cloud.seata.feign.SeataFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:37:327  INFO 2828 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'seataFeignObjectWrapper' of type [com.alibaba.cloud.seata.feign.SeataFeignObjectWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:43:38:344  INFO 2828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+17:43:38:488  INFO 2828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:43:38:505  INFO 2828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+17:43:41:400  INFO 2828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:43:41:401  INFO 2828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 15372 ms
+17:43:42:678  INFO 2828 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+17:43:42:973  INFO 2828 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'pay-service' URL not provided. Will try picking an instance via load-balancing.
+17:43:43:421  INFO 2828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+17:43:45:594  INFO 2828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+17:43:46:107  INFO 2828 --- [main] i.s.c.r.netty.NettyClientChannelManager  : will connect to 192.168.61.191:8099
+17:43:46:108  INFO 2828 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : RM will register :jdbc:mysql://localhost:3306/hm-trade
+17:43:46:111  INFO 2828 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : NettyPool create channel to transactionRole:RMROLE,address:192.168.61.191:8099,msg:< RegisterRMRequest{resourceIds='jdbc:mysql://localhost:3306/hm-trade', applicationId='trade-service', transactionServiceGroup='hmall'} >
+17:43:46:196  INFO 2828 --- [main] i.s.c.rpc.netty.RmNettyRemotingClient    : register RM success. client version:1.5.2, server version:1.5.2,channel:[id: 0x2c449b98, L:/192.168.61.191:58503 - R:/192.168.61.191:8099]
+17:43:46:196  INFO 2828 --- [main] i.s.core.rpc.netty.NettyPoolableFactory  : register success, cost 36 ms, version:1.5.2,role:RMROLE,channel:[id: 0x2c449b98, L:/192.168.61.191:58503 - R:/192.168.61.191:8099]
+17:43:53:323  INFO 2828 --- [main] i.s.s.a.GlobalTransactionScanner         : Bean[com.hmall.trade.service.impl.OrderServiceImpl$$EnhancerBySpringCGLIB$$db24ed8] with name [orderServiceImpl] would use interceptor [io.seata.spring.annotation.GlobalTransactionalInterceptor]
+17:43:56:787  INFO 2828 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+17:44:00:850  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of cc7df017-8229-4aa1-be7f-4ead3cb4f917
+17:44:00:851  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] RpcClient init label, labels = {module=naming, source=sdk}
+17:44:00:851  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:44:00:852  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:44:00:852  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:44:00:853  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+17:44:01:011  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Success to connect to server [localhost:8848] on start up, connectionId = 1741945440874_172.17.0.1_49728
+17:44:01:018  INFO 2828 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Notify connected event to listeners.
+17:44:01:019  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:44:01:020  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800560040
+17:44:01:139  INFO 2828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+17:44:01:172  INFO 2828 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.61.191:8084 register finished
+17:44:01:609  INFO 2828 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Receive server push request, request = NotifySubscriberRequest, requestId = 31
+17:44:01:620  INFO 2828 --- [nacos-grpc-client-executor-6] com.alibaba.nacos.common.remote.client   : [cc7df017-8229-4aa1-be7f-4ead3cb4f917] Ack server push request, request = NotifySubscriberRequest, requestId = 31
+17:44:02:471  INFO 2828 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+17:44:02:483  INFO 2828 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+17:44:02:582  INFO 2828 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+17:44:02:938  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:03:044  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:0/SimpleConnection@7227e3f1 [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58540]
+17:44:03:156  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:03:187  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:1/SimpleConnection@2c64e2d0 [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58541]
+17:44:04:231  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:04:271  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:2/SimpleConnection@5a14a8c1 [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58542]
+17:44:06:290  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:06:322  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:3/SimpleConnection@55a7f0af [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58556]
+17:44:10:337  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:10:360  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:4/SimpleConnection@1f6af096 [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58567]
+17:44:15:751  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:16:262  INFO 2828 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:5/SimpleConnection@85446a [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58578]
+17:44:16:276  INFO 2828 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Broker not available; cannot force queue declarations during start: java.io.IOException
+17:44:17:119  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:17:453  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:6/SimpleConnection@2d021ed7 [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58579]
+17:44:17:482  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:17:603  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:7/SimpleConnection@77710740 [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58580]
+17:44:18:712  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:18:742  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:8/SimpleConnection@59b8930 [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58583]
+17:44:20:768  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:20:803  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:9/SimpleConnection@760b35ff [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58595]
+17:44:24:835  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:24:857  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:10/SimpleConnection@75dcae2f [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58605]
+17:44:29:890  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+17:44:29:951  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7866ffa:11/SimpleConnection@6fc88b21 [delegate=amqp://itheima@127.0.0.1:5672//hmall, localPort= 58624]
+17:44:29:975 ERROR 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpIOException: java.io.IOException
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.RabbitAccessor.convertRabbitAccessException(RabbitAccessor.java:113) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2237) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.initialize(RabbitAdmin.java:693) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.lambda$afterPropertiesSet$10(RabbitAdmin.java:619) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329) ~[spring-retry-1.3.4.jar:na]
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209) ~[spring-retry-1.3.4.jar:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.lambda$afterPropertiesSet$11(RabbitAdmin.java:618) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CompositeConnectionListener.lambda$onCreate$0(CompositeConnectionListener.java:38) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.util.concurrent.CopyOnWriteArrayList.forEach(CopyOnWriteArrayList.java:807) ~[na:na]
+	at org.springframework.amqp.rabbit.connection.CompositeConnectionListener.onCreate(CompositeConnectionListener.java:38) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:731) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:676) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$700(CachingConnectionFactory.java:100) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1183) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at com.sun.proxy.$Proxy158.exchangeDeclare(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.declareExchanges(RabbitAdmin.java:806) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.lambda$initialize$12(RabbitAdmin.java:694) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.invokeAction(RabbitTemplate.java:2270) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2231) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.initialize(RabbitAdmin.java:693) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1946) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.exchangeDeclare(ChannelN.java:783) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.exchangeDeclare(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at com.sun.proxy.$Proxy158.exchangeDeclare(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.declareExchanges(RabbitAdmin.java:806) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.lambda$initialize$12(RabbitAdmin.java:694) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.invokeAction(RabbitTemplate.java:2270) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2231) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 27 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: connection error; protocol method: #method<connection.close>(reply-code=503, reply-text=COMMAND_INVALID - unknown exchange type 'x-delayed-message', class-id=40, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 39 common frames omitted
+
+17:44:30:232  WARN 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Failed to declare queue: trade.delay.order.queue
+17:44:30:874  WARN 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Queue declaration failed; retries left=3
+
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[trade.delay.order.queue]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1385) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at com.sun.proxy.$Proxy158.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 common frames omitted
+
+17:44:36:010  WARN 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Failed to declare queue: trade.delay.order.queue
+17:44:36:012  WARN 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Queue declaration failed; retries left=2
+
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[trade.delay.order.queue]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1385) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at com.sun.proxy.$Proxy158.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 common frames omitted
+
+17:44:41:039  WARN 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Failed to declare queue: trade.delay.order.queue
+17:44:41:047  WARN 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Queue declaration failed; retries left=1
+
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[trade.delay.order.queue]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1385) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at com.sun.proxy.$Proxy158.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 common frames omitted
+
+17:44:46:059  WARN 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.listener.BlockingQueueConsumer   : Failed to declare queue: trade.delay.order.queue
+17:44:46:065 ERROR 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Consumer threw missing queues exception, fatal=true
+
+org.springframework.amqp.rabbit.listener.QueuesNotAvailableException: Cannot prepare queue for listener. Either the queue doesn't exist or the broker will not allow us to use it.
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.handleDeclarationException(BlockingQueueConsumer.java:710) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:644) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1385) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[trade.delay.order.queue]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 4 common frames omitted
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at com.sun.proxy.$Proxy158.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 common frames omitted
+
+17:44:46:069  WARN 2828 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.amqp.rabbit.config.internalRabbitListenerEndpointRegistry'; nested exception is org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+17:44:46:124  INFO 2828 --- [main] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+17:44:46:128 ERROR 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Stopping container from aborted consumer
+17:44:46:129  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+17:44:46:130  INFO 2828 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+17:44:46:176  INFO 2828 --- [main] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+17:44:46:520  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+17:44:46:521  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@34f37ed4[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+17:44:46:522  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : Close current connection 1741945440874_172.17.0.1_49728
+17:44:46:542  INFO 2828 --- [nacos-grpc-client-executor-16] c.a.n.c.remote.client.grpc.GrpcClient    : [1741945440874_172.17.0.1_49728]Ignore complete event,isRunning:false,isAbandon=false
+17:44:46:555  INFO 2828 --- [main] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@23ec291e[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 17]
+17:44:46:571  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 6d1b7458-9e43-46e2-af5d-e17c47710b4f
+17:44:46:572  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] RpcClient init label, labels = {module=naming, source=sdk}
+17:44:46:572  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:44:46:572  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:44:46:572  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:44:46:573  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] Try to connect to server on start up, server: {serverIp = 'localhost', server main port = 8848}
+17:44:46:752  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] Success to connect to server [localhost:8848] on start up, connectionId = 1741945486634_172.17.0.1_51672
+17:44:46:752  INFO 2828 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] Notify connected event to listeners.
+17:44:46:752  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:44:46:753  INFO 2828 --- [main] com.alibaba.nacos.common.remote.client   : [6d1b7458-9e43-46e2-af5d-e17c47710b4f] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$471/0x0000000800560040
+17:44:46:841  INFO 2828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+17:44:47:016  INFO 2828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+17:44:47:029  INFO 2828 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : channel inactive: [id: 0x2c449b98, L:/192.168.61.191:58503 ! R:/192.168.61.191:8099]
+17:44:47:030  INFO 2828 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.netty.NettyClientChannelManager  : return to pool, rm channel:[id: 0x2c449b98, L:/192.168.61.191:58503 ! R:/192.168.61.191:8099]
+17:44:47:030  INFO 2828 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : channel valid false,channel:[id: 0x2c449b98, L:/192.168.61.191:58503 ! R:/192.168.61.191:8099]
+17:44:47:055  INFO 2828 --- [NettyClientSelector_RMROLE_1_1] i.s.core.rpc.netty.NettyPoolableFactory  : will destroy channel:[id: 0x2c449b98, L:/192.168.61.191:58503 ! R:/192.168.61.191:8099]
+17:44:47:056  INFO 2828 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x2c449b98, L:/192.168.61.191:58503 ! R:/192.168.61.191:8099]) will closed
+17:44:47:056  INFO 2828 --- [NettyClientSelector_RMROLE_1_1] i.s.c.r.n.AbstractNettyRemotingClient    : ChannelHandlerContext(AbstractNettyRemotingClient$ClientHandler#0, [id: 0x2c449b98, L:/192.168.61.191:58503 ! R:/192.168.61.191:8099]) will closed
+17:44:48:434  INFO 2828 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+17:44:48:501  INFO 2828 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+17:44:48:659 ERROR 2828 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.amqp.rabbit.config.internalRabbitListenerEndpointRegistry'; nested exception is org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356) ~[spring-context-5.3.27.jar:5.3.27]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:937) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.trade.TradeApplication.main(TradeApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.waitForConsumersToStart(SimpleMessageListenerContainer.java:604) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doStart(SimpleMessageListenerContainer.java:564) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:1409) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistry.startIfNecessary(RabbitListenerEndpointRegistry.java:289) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistry.start(RabbitListenerEndpointRegistry.java:239) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178) ~[spring-context-5.3.27.jar:5.3.27]
+	... 14 common frames omitted
+Caused by: org.springframework.amqp.rabbit.listener.QueuesNotAvailableException: Cannot prepare queue for listener. Either the queue doesn't exist or the broker will not allow us to use it.
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.handleDeclarationException(BlockingQueueConsumer.java:710) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:644) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:624) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1385) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[trade.delay.order.queue]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:760) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:637) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 4 common frames omitted
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46) ~[amqp-client-5.14.2.jar:5.14.2]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	at com.sun.proxy.$Proxy158.queueDeclarePassive(Unknown Source) ~[na:na]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:738) ~[spring-rabbit-2.4.12.jar:2.4.12]
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'trade.delay.order.queue' in vhost '/hmall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47) ~[amqp-client-5.14.2.jar:5.14.2]
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666) ~[amqp-client-5.14.2.jar:5.14.2]
+	... 1 common frames omitted
+
+17:44:51:146  WARN 2828 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+17:44:51:146  WARN 2828 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+17:44:51:147  WARN 2828 --- [Thread-5] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+17:44:51:147  WARN 2828 --- [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end

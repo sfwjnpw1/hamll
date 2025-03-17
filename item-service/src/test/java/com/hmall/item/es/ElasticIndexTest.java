@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-public class ElasticIndexTest {
+public class  ElasticIndexTest {
 
     private RestHighLevelClient client;
 
