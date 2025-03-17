@@ -1,0 +1,27 @@
+INFO: Sentinel log output type is: file
+INFO: Sentinel log charset is: utf-8
+INFO: Sentinel log base directory is: C:\Users\ycy22\logs\csp\
+INFO: Sentinel log name use pid is: false
+INFO: Sentinel log level is: INFO
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.5.12)
+
+2025-03-10 14:41:49.680  INFO 33164 --- [           main] c.a.c.s.dashboard.DashboardApplication   : Starting DashboardApplication using Java 23 on rascal2 with PID 33164 (C:\Users\ycy22\Desktop\hmall2\sentinel\sentinel-dashboard.jar started by YCC in C:\Users\ycy22\Desktop\hmall2\sentinel)
+2025-03-10 14:41:49.687  INFO 33164 --- [           main] c.a.c.s.dashboard.DashboardApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-03-10 14:41:52.497  INFO 33164 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2025-03-10 14:41:52.519  INFO 33164 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10 14:41:52.519  INFO 33164 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2025-03-10 14:41:52.675  INFO 33164 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-10 14:41:52.676  INFO 33164 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2563 ms
+2025-03-10 14:41:52.809  INFO 33164 --- [           main] c.a.c.s.dashboard.config.WebConfig       : Sentinel servlet CommonFilter registered
+2025-03-10 14:41:54.095  INFO 33164 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2025-03-10 14:41:54.110  INFO 33164 --- [           main] c.a.c.s.dashboard.DashboardApplication   : Started DashboardApplication in 5.685 seconds (JVM running for 6.858)
+2025-03-10 14:42:03.408  INFO 33164 --- [nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-10 14:42:03.409  INFO 33164 --- [nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-10 14:42:03.411  INFO 33164 --- [nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
